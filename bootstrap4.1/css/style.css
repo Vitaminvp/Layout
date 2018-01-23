@@ -1,0 +1,26 @@
+body{
+    margin-top: 56px;
+}
+.bear-img, 
+.sunrise-img, 
+.lightning-img,
+.road-img{
+    width: 100%;
+    height: 500px;
+}
+.bear-img{
+    background: url("/img/polar-bear.jpg");
+    background-size: cover;
+}
+.lightning-img{
+    background: url("/img/lightning.jpg");
+    background-size: cover;
+}
+.road-img{
+    background: url("/img/road.jpg");
+    background-size: cover;
+}
+.sunrise-img{
+    background: url("/img/sunrise.jpg");
+    background-size: cover;
+}
