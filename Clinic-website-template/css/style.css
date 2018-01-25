@@ -37,6 +37,7 @@ body {
     display: table;
     clear: both;
 }
+
 /******************************HEADER******************************/
 
 header {
@@ -52,11 +53,14 @@ header {
 }
 
 header .header__logo {
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     position: relative;
 }
@@ -94,6 +98,7 @@ header .fa::after {
     position: absolute;
     top: -3px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     display: block;
     width: 30px;
@@ -129,14 +134,20 @@ header .hello {
 }
 
 header .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: absolute;
     bottom: -50%;
     left: 0;
     background-color: white;
     border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -159,32 +170,36 @@ header .info p.about {
 
 /******************************SECTION******************************/
 
-section {
+.section {
     padding-top: 40px;
     background: #f1f1f1;
 }
 
-section .articles {
+.section .articles {
     padding: 214px 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
-section .article {
+.section .article {
     text-align: center;
     width: 220px;
     font-size: 24px;
     padding-bottom: 20px;
 }
 
-section img {
+.section img {
     width: 162px;
     height: 162px;
     text-align: center;
 }
 
-section p {
+.section p {
     padding-top: 24px;
     /*    font-family: "Open Sans Light", Arial, sans-serif;*/
     font-weight: lighter;
@@ -199,8 +214,15 @@ section p {
 }
 
 .main_slider .main_slider-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: center;
 }
@@ -214,10 +236,12 @@ section p {
 .main_slider .main_slider-item img {
     width: 515px;
 }
-.main_slider .slick-dotted.slick-slider{
-        margin-bottom: 0;
-    }
-.main_slider .slick-dots li button:before{
+
+.main_slider .slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.main_slider .slick-dots li button:before {
     top: -25px;
 }
 
@@ -232,8 +256,15 @@ section p {
 .second_slider .second_slick {}
 
 .second_slider .second_slick-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
 }
@@ -293,9 +324,15 @@ section p {
 .circle .orange {
     position: relative;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 532px;
     width: 50%;
@@ -305,6 +342,8 @@ section p {
 
 .circle .white {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -348,22 +387,29 @@ section p {
 
 /******************************BOTTOM******************************/
 
-.bottom-block{
+.bottom-block {
     background: #f1f1f1;
     width: 100%;
 }
-.bottom-wrap{
+
+.bottom-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
-    
+
 }
+
 .bottom-left,
 .bottom-right {
     padding-top: 88px;
     width: 50%;
-/*    float: left;*/
+    /*    float: left;*/
     background: #f1f1f1;
 }
 
@@ -372,6 +418,8 @@ section p {
     border: 1px solid black;
     border-radius: 3px;
     list-style: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
 
 }
@@ -414,6 +462,7 @@ section p {
     float: left;
     width: 93px;
     height: 93px;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -436,9 +485,15 @@ footer {
 
 .footer_wrap {
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     height: 70px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
 }
@@ -449,6 +504,7 @@ footer {
     font-size: 14px;
     text-decoration: none;
 }
+
 /******************************FOOTER******************************/
 
 @media (min-width: 1000px) {
@@ -469,33 +525,43 @@ footer {
     }
 
 }
-@media (max-width: 768px){
-    .bottom-wrap{
+
+@media (max-width: 768px) {
+    .bottom-wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         -ms-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
-    .bottom-left, .bottom-right {
+    .bottom-left,
+    .bottom-right {
         width: 100%;
         padding-left: 60px;
         padding-right: 20px;
     }
-    .circle .white{
+    .circle .white {
         display: none;
     }
-    .circle .orange{
+    .circle .orange {
         width: 100%;
     }
-    .circle .circle_content{
+    .circle .circle_content {
         width: 100%;
     }
 }
-@media (max-width: 576px){
-    header .info{
+
+@media (max-width: 576px) {
+    header .info {
         display: none;
     }
-    section .articles{
+    .section .articles {
         padding-top: 20px;
     }
 }
