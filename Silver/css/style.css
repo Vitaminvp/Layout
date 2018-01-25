@@ -1,0 +1,29 @@
+.wrapp{
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+                                 /*       SECTION TOP         */
+.top{
+    height: 64px;
+    background-color: #000;
+}
+.logo a{
+    display: inline-block;
+}
+.top_menu{
+    display: inline-flex;
+    list-style: none;
+}
+.top_menu a{
+    text-decoration: none;
+    color: #a9abaf;
+}
+.top_menu li{
+    margin-left: 26px;
+    padding-left: 38px;
+}
