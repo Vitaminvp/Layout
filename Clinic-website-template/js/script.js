@@ -3,7 +3,17 @@
 $('.main_slick').slick({
   infinite: true,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 	
 
