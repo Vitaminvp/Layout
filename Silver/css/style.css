@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto-bold-webfont.woff2') format('woff2'),
+         url('roboto-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 .wrapp{
     margin: 0 auto;
     padding: 0 30px;
@@ -20,10 +34,15 @@
     list-style: none;
 }
 .top_menu a{
+    font-family: Roboto, Arial, sans-serif;
     text-decoration: none;
     color: #a9abaf;
 }
 .top_menu li{
     margin-left: 26px;
     padding-left: 38px;
+}
+.header{
+    height: 594px;
+    background-color: #1f2147;
 }
