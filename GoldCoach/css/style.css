@@ -3,7 +3,6 @@ body{
     background: #fff;
 }
 .logo{
-/*    display: inline-block;*/
     width: 308px;
     text-align: left;
     margin: 0 auto;
@@ -62,6 +61,7 @@ body{
 }
 .gray{
     background: #eaeaea;
+    align-self: stretch;
 /*    margin-right: -15px;*/
 }
 .date {
@@ -117,7 +117,7 @@ body{
 }
 .center_content{
     text-align: center;
-    margin: 0 auto;
+/*    margin: 0 auto;*/
     color: white;
 }
 .center_content img{
@@ -223,12 +223,18 @@ body{
     text-transform: uppercase;
 }
 .ital_text{
-    display: block;
+    text-align: center;
+    width: 500px;
     margin: 0 auto;
     color: #2b2e35;
     font-style: italic;
     font-size: 24px;
-    width: 500px;
-    margin: 50px 0;
     font-family: Georgia;
+}
+
+.flex_height{
+   display: flex;
+   flex-direction: row; 
+   align-items: stretch;
+    flex-wrap: wrap;
 }
