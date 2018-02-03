@@ -1,0 +1,344 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    background: #fff;
+}
+.logo{
+    width: 308px;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 17px;
+}
+.logo img{
+}
+.logo__text{
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    color: #18374b;
+    font-size: 27px;
+    font-weight: 400;
+}
+.vline{
+    padding: 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #000;
+    outline: none;
+    width: 100%;
+}
+.chargeless{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #020001;
+    font-size: 30px;
+
+}
+.chargeless h1{
+    margin: 58px 0 47px;
+    font-weight: 700;
+    color: #ff621f;
+    font-size: 34px;
+}
+.book{
+    margin-top: 33px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 30px;
+    background-color: #ff621f;
+    border: none;
+    border-bottom: 6px solid #ff332a;
+    outline: none;
+    padding: 8px 40px;
+}
+.orange{
+    background: #ff621f;
+    padding-top: 38px;
+    padding-bottom: 59px;
+    
+}
+.gray{
+    background: #eaeaea;
+}
+.date {
+    justify-content: flex-start;
+    display: flex;
+    margin-right: 18px;
+    margin-bottom: 57px;
+}
+.date__box {
+    margin-left: 32px;
+    margin-right: 32px;
+    width: 126px;
+    height: 121px;
+    background-color: white;
+    text-align: center;
+}
+.date .date__box-text {
+    color: white;
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 400;
+    height: 34px;
+    background-color: #2b2e35;
+}
+.date__box-number {
+    line-height: 87px;
+    color: #c2c2c2;
+    font-size: 73px;
+    font-weight: 700;
+}
+.date__text {
+    width: 290px;
+}
+
+.date__text {
+    text-align:left;
+    color: white;
+}
+.date__text-date {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #eaeaea;
+}
+.date__text-date span{
+    font-size: 36px;
+}
+.date__text-time {
+    font-size: 24px;
+    font-weight: normal;
+}
+.center_content{
+    text-align: center;
+    color: white;
+}
+.center_content img{
+    border-radius: 50%;
+    width: 204px;
+    height: 204px;
+    background-color: white;
+    border: 8px solid white;
+}
+.center_content h3{
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+}
+.center_content h2{
+    margin: 0 auto;
+    width: 126px;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+.circle-list{
+    color: white;
+    padding-left: 60px;
+    padding-top: 44px;
+    padding-bottom: 40px;
+}
+.circle-list li{
+    padding: 0 32px 28px 20px;
+}
+.gray h2{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #2b2e35;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 34px 0 15px;
+}
+.gray h3{
+    color: #2b2e35;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+.agl-list{
+    margin: 70px 0 0 ;
+    padding: 0;
+    list-style: none;
+}
+.agl-list li{
+    padding-left: 40px;
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 24px;
+}
+.agl-list li span{
+    font-weight: bold;
+}
+.agl-list li::before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 6px;
+  height: 12px;
+  border-right: 3px solid #d80027;
+  border-bottom: 2px solid #d80027;
+  transform: rotate(45deg);
+}
+.center_flex{
+    display: flex;
+    justify-content: center;
+}
+.time-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.time-list li{
+    text-align: center;
+    color: #2b2e35;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 8px;
+}
+.time-list li span{
+    display: block;
+    text-align: center;
+    width: 67px;
+    height: 67px;
+    background-color: #2b2e35;
+    border-radius: 10px;
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.ital_text{
+    margin: 50px auto;
+    color: #2b2e35;
+    font-style: italic;
+    font-size: 24px;
+    max-width: 600px;
+    font-family: Georgia;
+}
+.valign{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.vebinar-link{
+    margin: 0 0 55px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 43px;
+    font-size: 36px;
+    line-height: 70px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #ff621f;
+}
+.vebinar-link:hover{
+    text-decoration: none;
+}
+.forwhom{
+    font-size: 36px;
+    color: #2b2e35;
+    font-weight: 400;
+    border-bottom: 2px dashed #64666b;
+    padding-bottom: 30px;
+    margin-bottom: 55px;
+}
+.finally{
+    text-align: center;
+    color: #2b2e35;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 35px;
+}
+.justify{
+    color: #2b2e35;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+.justify span{
+    font-size: 27px;
+    font-weight: 700; 
+}
+.justify p{
+    padding-bottom: 25px;
+}
+.bg{
+    background: url(../img/bg.jpg);
+    padding: 33px 0 28px;
+}
+.img-comtainer{
+    width: 100%;
+    text-align: center;
+}
+.collage{
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1104px;
+/*    height: 100%;*/
+}
+.iknow {
+    color: #2b2e35;
+    font-size: 36px;
+    font-weight: 400;
+
+}
+
+a.yes{
+    display: block;
+    text-align: center;
+    font-size: 48px;
+    padding: 10px 0;
+}
+.come {
+    font-size: 30px;
+    font-weight: 700;
+}
+.social {
+    list-style: none;
+    margin: 45px 0 53px;
+}
+.social li{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 26px;
+    text-align: center;
+    line-height: 40px;
+}
+.social li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.social .social__vk {
+    background-color: #47658b;
+}
+.social .social__fb {
+    background-color: #3f5798;
+}
+.social .social__tw {
+    background-color: #3bacf0;
+}
+@media screen and (max-width: 576px){
+    a.yes {
+        font-size: 20px;
+    }
+    .book {
+        font-size: 20px;
+    }
+}
