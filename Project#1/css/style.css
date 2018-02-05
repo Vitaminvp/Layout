@@ -22,6 +22,7 @@ li {
 .wrapper {
     margin: 0 auto;
     max-width: 1170px;
+    width: 100%;
 
 
 }
@@ -45,15 +46,16 @@ h3{
     padding: 0 10px;
     width: 160px;
     background-color: transparent;
-    border: 1px solid white;
+    border: 2px solid white;
     outline: none;
     cursor: pointer;
     transition: all .2s ease;
+    border-radius: 0px;
 }
 
 .btn:hover {
     background-color: #f39c12;
-    border: 1px solid #f39c12;
+    border: 2px solid #f39c12;
 }
 .hr{
     width: 100%;
@@ -333,11 +335,19 @@ span.progress_light{
     color: white;
     text-align: center;
     margin-bottom: 100px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 .blockq-box{
-    padding-top: 200px;
+/*    padding-top: 200px;*/
 }
-.block blockquote{
+.blockq-box blockquote{
     padding: 0 50px;
     display: inline-flex;
     font-size: 45px;
@@ -346,7 +356,7 @@ span.progress_light{
     margin-bottom: 56px;
     position: relative;
 }
-.block blockquote::before{
+.blockq-box blockquote::before{
     content: "“";
     position: absolute;
     left: 0;
@@ -356,7 +366,7 @@ span.progress_light{
     font-weight: 700;
     line-height: 120px;
 }
-.block blockquote::after{
+.blockq-box blockquote::after{
     content: "“";
     position: absolute;
     right: 0;
@@ -366,7 +376,7 @@ span.progress_light{
     font-weight: 700;
     line-height: 120px;
 }
-.block cite{
+cite{
     font-size: 24px;
     font-weight: 700;
     line-height: 60px;
@@ -375,7 +385,7 @@ span.progress_light{
     text-decoration: none;
     font-style: normal;
 }
-.block cite::after{
+.blockq-box cite::after{
     position: absolute;
     content: "";
     top: 0;
@@ -514,7 +524,7 @@ span.progress_light{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 220px;
+/*    padding-top: 220px;*/
 }
 .client__cercle{
     display: -webkit-flex;
@@ -554,10 +564,12 @@ span.progress_light{
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .design__item{
     text-align: center;
+    max-width: 376px;
 }
 .design__img{
     margin: 0 auto;
@@ -589,4 +601,192 @@ span.progress_light{
 }
 .design__name{
     margin-top: 26px;
+}
+
+/*-----------------------------------SECTION PRICE---------------------------------------------*/
+.ml{
+    text-align: left;
+}
+.ml .design__img{
+    margin-left: 0;
+    width: 125px;
+    height: 125px;
+}
+.pricebtn{
+    font-size: 16px;
+    color: #0d0d0d;
+    margin: 20px 10px;
+    border: 2px solid #f39c12;
+}
+.pricebtn:hover{
+    color: white;
+}
+.active .pricebtn{
+    
+}
+.active .pricebtn, .pricebtn:hover{
+/*    background: #f39c12;*/
+/*    color: white;*/
+    border: 2px solid #f39c12;
+}
+.price__box{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.price__table{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.price__list{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    color: #737373;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.price__list:first-child{
+    border-left: 1px solid #e6e6e6;
+}   
+.price__list:last-child{
+    border-right: 1px solid #e6e6e6;
+}   
+.active .price__list-title{
+    color: white;
+}
+.active{
+    margin-top: -15px;
+    background-color: #f2f2f2;
+    border-top: 15px solid #f39c12;
+    border-bottom: 10px solid #e6e6e6;
+/*    transform: scale(1.007);*/
+}
+.active li:first-child{
+    background: #f39c12;
+    border-color: #f39c12;
+}
+.price__list + .price__list{
+    border-left: 0px;
+}
+.price__list li:nth-child(even){
+    background-color: #fafafa;
+}
+
+.active li:nth-child(even){
+    background-color: #e6e6e6;
+}
+.price__list li{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 18px 30px;
+    border-top: 1px solid #e6e6e6;
+    width: 100%;
+    
+}
+.price__list li:last-child{
+        border-bottom: 1px solid #e6e6e6;
+}
+.price__list-title{
+    margin: 0 auto;
+    text-align: center;
+    color: #0d0d0d;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+.price__list-title span{
+    display: block;
+    position: relative;
+}
+.price__list-title span::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 2px solid #f39c12;
+    width: 50px;
+    margin-top: 0px;
+}
+.active .price__list-title span::after{
+    border-top: 2px solid #fff;
+}
+
+/*-----------------------------------SECTION BLOCKQUOTE2---------------------------------------------*/
+.blockq2-box blockquote{
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 30px;
+    font-weight: lighter
+}
+.blockq2-box cite{
+    display: block;
+    margin-bottom: 30px;
+}
+.blockq2-box cite::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 5px solid #f39c12;
+    width: 45px;
+    margin-bottom: -10px;
+}
+.blockq2-box img{
+    border-radius: 50%;
+    margin-top: 20px;
+}  
+/*-----------------------------------SECTION BLOCKQUOTE2---------------------------------------------*/
+.portfolio__box{
+    text-align: center;
+}
+.portfolio__img {
+    max-width: 1170px;
+    height: 580px;
+    background-color: #f39c12;
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+.portfolio__img span{
+    position: absolute;
+    font-size: 58px;
+}
+.portfolio__name {
+    margin-top: 20px;
+    color: #0d0d0d;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.portfolio__position {
+    color: grey;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
 }
