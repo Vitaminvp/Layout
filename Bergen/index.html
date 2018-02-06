@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>BERGEN</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/swiper.js"></script> 
     <script src="js/script.js" type="text/javascript"></script>
+
+
 </head>
 <body>
    <header>
@@ -30,13 +35,79 @@
            <img src="img/logo.png" alt="">
        </div>
        </nav>
+       
+       <!-- Slider main container -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/location.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/smallsquare.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/lowprice.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/location.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/smallsquare.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/lowprice.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/location.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/smallsquare.png" alt=""></div>
+              <div class="swiper-slide"><img src="img/lowprice.png" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="content">
+            <div class="content__box">
+                <h1>Квартири з ремонтами</h1>
+                <div class="content__wrap">
+                    <div class="content__text left">
+                       <p>Як обрати квартиру, ціна якої зростатиме з роками? Надати перевагу локації, яка найближчим часом перетвориться на нове престижне місце для життя!</p>
+                        <p>В країнах з розвиненим ринком нерухомості одними з найпрестижніших вважаються будинки «на першій лінії», що розташовані на узбережжях водойм – річок та озер. Саме тому для реалізації проекту ж/к Sundance було обрано зелений куточок Микільської Слобідки.</p>
+                    </div>
+                    <div class="content__text right">
+                        <p>Як обрати квартиру, ціна якої зростатиме з роками? Надати перевагу локації, яка найближчим часом перетвориться на нове престижне місце для життя!</p>
+                        <p>В країнах з розвиненим ринком нерухомості одними з найпрестижніших вважаються будинки «на першій лінії», що розташовані на узбережжях водойм – річок та озер. Саме тому для реалізації проекту ж/к Sundance було обрано зелений куточок Микільської Слобідки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
    </header>
-   <section>
-       
-   </section>
+
    <footer>
-       
+       <div class="wrapper">
+            <div class="bottom-menu">
+                <nav class="bottom">
+                   <ul class="bottommenu">
+                       <li class="bottommenu__item"><a  class="bottommenu__link" href="#">Про&nbsp;комплекс</a></li>
+                       <li class="bottommenu__item"><a  class="bottommenu__link" href="#">Квартири</a></li>
+                       <li class="bottommenu__item"><a  class="bottommenu__link" href="#">Новини</a></li>
+                       <li class="bottommenu__item"><a  class="bottommenu__link" href="#">Контакти</a></li>
+                   </ul>
+                </nav>
+                <div class="credits">
+                    © 2015 Строительная группа «Фундамент». Все права защищены
+                </div>
+            </div>
+            <div class="address">
+              Центральний офіс продажу:
+               <div class="address-box">
+                     
+                    <div>
+                       <p>Киев, пр. Отрадный, 103</p>
+                       <a href="mailto:info@bergen.com.ua">info@bergen.com.ua</a> 
+                    </div>
+                    <div>
+                        <p>+38 (044) 684 52 85</p>
+                        <p>+38 (044) 220 30 22</p>
+                    </div>
+               
+              
+
+                    
+                </div>
+            </div>
+       </div>
+       <a href="#"><img src="img/realist.png" alt="" class="realist"></a>
    </footer>
-    
+
 </body>
 </html>
