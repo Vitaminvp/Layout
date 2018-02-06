@@ -1,5 +1,6 @@
 body{
     font-family: 'Open Sans', sans-serif;
+    background-color: white;
 }
 ul, li {
     display: -webkit-flex;
@@ -13,23 +14,53 @@ ul, li {
 
 
 header{
-    background: white url(../img/bg_tr.png) center top no-repeat;  
+    background: url(../img/bg_all.jpg) center top no-repeat;
+    height: 134rem;
+}
+.left_branch{
+    position: absolute;
+    background-attachment: scroll;
+    top: 0;
+    left: 0;
+}
+.right_branch{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.basement{
+    position: absolute;
+    top: 10rem;
+    left: 0;
 }
 .top{
+    background: white url(../img/bg_tr.png) center top no-repeat;  
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    flex-direction: column;
     justify-content: center; 
+    position: relative;
+}
+.menu{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
 }
 .topmenu {
     width: 50%;
 }
 .topmenu .topmenu__item {
+    position: relative;
     
 }
 .topmenu .topmenu__link {
+    position: relative;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.18);
     color: white;
     font-size: 1rem;
@@ -41,11 +72,10 @@ header{
     border-top: none;
     text-decoration: none;
 }
-.topmenu .topmenu__link:hover{
-    position: relative;
-    color: crimson;
-    border-color: crimson;
-    padding-top: 1rem;
+.topmenu__item .topmenu__link:hover {
+    color: #ff0033;
+    border-color: white;
+    background-color: white;
 }
 .ml{
     justify-content: flex-end;
@@ -59,4 +89,8 @@ header{
 .logo{
     text-align: center;
     margin-top: 4.5rem;
+}
+section{
+    
+    height: 500px;
 }
