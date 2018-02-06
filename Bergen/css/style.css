@@ -1,13 +1,14 @@
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: white;
+    
 }
 ul, li {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
-    display: inline-flex;
+    display: flex;
     list-style: none;
 }
 /* HEADER */
@@ -43,9 +44,11 @@ ul, li {
     }
     /* SWIPER */
 header{
-    background: url(../img/main_bg.jpg) center top no-repeat;
+    background: url(../img/bg_main.jpg) center top no-repeat;
     background-size: cover;
     height: 130rem;
+    position: relative;
+    overflow: hidden;
 }
 .left_branch{
     width: 5em;
@@ -110,11 +113,9 @@ header{
     width: 50%;
 }
 .topmenu .topmenu__item {
-    position: relative;
     
 }
-.topmenu .topmenu__link {
-    position: relative;
+.topmenu__link {
     text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
     color: white;
     font-size: 1rem;
@@ -125,6 +126,7 @@ header{
     border: 0.1rem solid white;
     border-top: none;
     text-decoration: none;
+    z-index: 1;
 }
 .topmenu__item .topmenu__link:hover {
     color: #ff0033;
@@ -142,7 +144,7 @@ header{
 }
 .logo{
     text-align: center;
-    margin-top: 4.5rem;
+    margin-top: 3.65rem;
     transition: all .5s ease-out;
 }
 .logo img{
@@ -296,4 +298,152 @@ footer{
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+}
+/* PARALAX */
+.garden{
+    position: relative;
+}
+.leaf{
+    position: absolute;
+    width: 266px;
+    height: 173px;
+    background: url(../img/leaf.png) no-repeat center;
+    bottom: 5%;
+    left: 30%;
+}
+.tree{
+    position: absolute;
+    width: 366px;
+    height: 515px;
+    background: url(../img/tree2.png) no-repeat center;
+    bottom: 0;
+    left: -183px;
+}
+.grass{
+    position: absolute;
+    width: 100%;
+    height: 318px;
+    background: url(../img/grass.png) no-repeat center bottom;
+    bottom: 0;    bottom: -200px;    left: 0;
+}
+.grass2{
+    position: absolute;
+    width: 100%;
+    height: 318px;
+    background: url(../img/grass2.png) no-repeat center bottom;
+    bottom: -200px;
+    left: 0;
+}
+.grass3{
+    position: absolute;
+    width: 100%;
+    height: 318px;
+    background: url(../img/grass2.png) no-repeat center;
+    bottom: -200px;
+    left: 0;
+}
+.oak{
+    position: absolute;
+    width: 436px;
+    height: 194px;
+    background: url(../img/oak.png) no-repeat center;
+    bottom: 10%;
+    left: 50%;
+}
+/* MEDIA */
+@media (max-width: 960px){
+    .menu .topmenu{
+        flex-direction: column;
+    }
+    .ml{
+        align-items: flex-end;
+    }
+    .topmenu .topmenu__link{
+        display: block;
+        text-align: center;
+        border-top:  0.1rem solid white;
+        margin: 0.2rem 0.1rem 0;
+        padding: 0.5rem 1rem;
+        width: 10rem;
+        
+    }
+    .ml li:last-child{
+        margin-right: 0;
+    }
+    .mr li:first-child{
+        margin-left: 0;
+    }
+    .swiper-container{
+        margin-top: 0;
+    }
+    .logo{
+        margin-top: 1.65rem;
+    }
+    .content__box {
+        padding-top: 31rem;
+    }
+    .content__text {
+        width: 20rem;
+    }
+    .logo img:hover{
+        transform: none;    
+    }
+    .wrapper {
+        flex-direction: column-reverse;
+    }
+    .bottom-menu::after{
+        display: none;
+    }
+    .bottom-menu::before{
+        display: none;
+    }
+    .bottommenu{
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .bottommenu__link {
+        margin-right: 0.5rem;
+    }
+    .bottom-menu {
+        padding-left: 0;
+    }
+    .address {
+        margin-left: 0;
+    }
+}
+@media (max-width: 720px){
+    .basement{
+        display: none;
+        opacity: 0;
+    }
+    .topmenu .topmenu__link{
+        padding: 0.5rem 0.5rem;
+    }
+    
+    .content {
+        margin-top: -10rem;
+    }
+    .content__wrap {
+        text-align: center;
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content__text{
+        width: 90%;
+    }
+    .content__text p {
+        text-align: justify;
+        padding-bottom: 0    ;
+    }
+    .content__text{
+        padding: 0.2rem;
+    }
+    .content__box h1 {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .content__box {
+        padding-top: 29rem;
+    }
 }
