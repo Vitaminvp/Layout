@@ -1,0 +1,17 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #f2f2f2;
+}
+.top{
+    background: #195e74;
+    border-bottom: 1px solid #9f9f9f;
+}
+.logo h1{
+    color: white;
+    font-size: 23px;
+    font-weight: 100;
+    line-height: 30px; 
+    text-transform: uppercase;
+}
