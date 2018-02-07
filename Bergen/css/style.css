@@ -152,7 +152,7 @@ header{
     
 }
 .logo img:hover{
-    transform: rotate(360deg)  scale(1.4);    
+    transform: rotate(360deg)  scale(1.3);    
 }
 section{
     
@@ -434,7 +434,7 @@ footer{
     }
     .content__text p {
         text-align: justify;
-        padding-bottom: 0    ;
+        padding-bottom: 0;
     }
     .content__text{
         padding: 0.2rem;
@@ -445,5 +445,8 @@ footer{
     }
     .content__box {
         padding-top: 29rem;
+    }
+    .address p {
+        font-size: .8rem;
     }
 }
