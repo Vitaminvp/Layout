@@ -7,47 +7,46 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/swiper.js"></script> 
+    <script src="js/swiper.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
-
-
 </head>
 <body>
-   <header>
-       <nav class="top">
-          <div class="left_branch"><img src="img/left_branch.png" alt=""></div>
-          <div class="right_branch"><img src="img/right_branch.png" alt=""></div>
-          <div class="basement"><img src="img/basement.png" alt=""></div>
-          <div class="menu">
-               <ul class="topmenu ml">
-                   <li class="topmenu__item"><a  class="topmenu__link" href="#">Про&nbsp;комплекс</a></li>
-                   <li class="topmenu__item"><a  class="topmenu__link" href="#">Квартири</a></li>
-               </ul>
-               <ul class="topmenu mr">
-                   <li class="topmenu__item"><a  class="topmenu__link" href="#">Новини</a></li>
-                   <li class="topmenu__item"><a  class="topmenu__link" href="#">Контакти</a></li>
-               </ul>
-              
-          </div>
-       <div class="logo">
-           <img src="img/logo.png" alt="">
-       </div>
-       </nav>
-       
-       <!-- Slider main container -->
-        <div class="swiper-container">
+    <header>
+        <nav class="top wow fadeInDownBig">
+            <div class="left_branch"><img src="img/left_branch.png" alt=""></div>
+            <div class="right_branch"><img src="img/right_branch.png" alt=""></div>
+            <div class="basement"><img src="img/basement.png" alt=""></div>
+            <div class="menu">
+                <ul class="topmenu ml">
+                    <li class="topmenu__item"><a class="topmenu__link" href="#">Про&nbsp;комплекс</a></li>
+                    <li class="topmenu__item"><a class="topmenu__link" href="#">Квартири</a></li>
+                </ul>
+                <ul class="topmenu mr">
+                    <li class="topmenu__item"><a class="topmenu__link" href="#">Новини</a></li>
+                    <li class="topmenu__item"><a class="topmenu__link" href="#">Контакти</a></li>
+                </ul>
+
+            </div>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+        </nav>
+        <!-- Slider main container -->
+        <div class="swiper-container wow fadeInUpBig">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="img/location.png" alt=""></div>
-              <div class="swiper-slide"><img src="img/smallsquare.png" alt=""></div>
-              <div class="swiper-slide"><img src="img/lowprice.png" alt=""></div>
-              <div class="swiper-slide"><img src="img/location.png" alt=""></div>
-              <div class="swiper-slide"><img src="img/smallsquare.png" alt=""></div>
-              <div class="swiper-slide"><img src="img/lowprice.png" alt=""></div>
-              <div class="swiper-slide"><img src="img/location.png" alt=""></div>
-              <div class="swiper-slide"><img src="img/smallsquare.png" alt=""></div>
-              <div class="swiper-slide"><img src="img/lowprice.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/location.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/smallsquare.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/lowprice.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/location.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/smallsquare.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/lowprice.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/location.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/smallsquare.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/lowprice.png" alt=""></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -60,7 +59,7 @@
                 <h1>Квартири з ремонтами</h1>
                 <div class="content__wrap">
                     <div class="content__text left">
-                       <p>Як обрати квартиру, ціна якої зростатиме з роками? Надати перевагу локації, яка найближчим часом перетвориться на нове престижне місце для життя!</p>
+                        <p>Як обрати квартиру, ціна якої зростатиме з роками? Надати перевагу локації, яка найближчим часом перетвориться на нове престижне місце для життя!</p>
                         <p>В країнах з розвиненим ринком нерухомості одними з найпрестижніших вважаються будинки «на першій лінії», що розташовані на узбережжях водойм – річок та озер. Саме тому для реалізації проекту ж/к Sundance було обрано зелений куточок Микільської Слобідки.</p>
                     </div>
                     <div class="content__text right">
@@ -70,55 +69,49 @@
                 </div>
             </div>
         </div>
-<!--        <div class="garden">-->
-<!--
+        <!--        <div class="garden">-->
+        <!--
             <div data-offset="90" class="paralax grass"></div>
             <div data-offset="30"  class="paralax grass2"></div>
 -->
-<!--            <div data-offset="80"  class="paralax grass3"></div>-->
-            <div data-offset="50"  class="paralax tree"></div>
-            <div data-offset="70"  class="paralax leaf"></div>
-            <div data-offset="20"  class="paralax oak"></div>
-<!--        </div>-->
+        <!--            <div data-offset="80"  class="paralax grass3"></div>-->
+        <div data-offset="50" class="paralax tree"></div>
+        <div data-offset="70" class="paralax leaf"></div>
+        <div data-offset="20" class="paralax oak"></div>
+        <!--        </div>-->
 
-   </header>
-
-   <footer>
-       <div class="wrapper">
+    </header>
+    <footer>
+        <div class="wrapper">
             <div class="bottom-menu">
                 <nav class="bottom">
-                   <ul class="bottommenu">
-                       <li class="bottommenu__item"><a  class="bottommenu__link" href="#">Про&nbsp;комплекс</a></li>
-                       <li class="bottommenu__item"><a  class="bottommenu__link" href="#">Квартири</a></li>
-                       <li class="bottommenu__item"><a  class="bottommenu__link" href="#">Новини</a></li>
-                       <li class="bottommenu__item"><a  class="bottommenu__link" href="#">Контакти</a></li>
-                   </ul>
+                    <ul class="bottommenu">
+                        <li class="bottommenu__item"><a class="bottommenu__link" href="#">Про&nbsp;комплекс</a></li>
+                        <li class="bottommenu__item"><a class="bottommenu__link" href="#">Квартири</a></li>
+                        <li class="bottommenu__item"><a class="bottommenu__link" href="#">Новини</a></li>
+                        <li class="bottommenu__item"><a class="bottommenu__link" href="#">Контакти</a></li>
+                    </ul>
                 </nav>
                 <div class="credits">
                     © 2015 Строительная группа «Фундамент». Все права защищены
                 </div>
             </div>
             <div class="address">
-              Центральний офіс продажу:
-               <div class="address-box">
-                     
+                Центральний офіс продажу:
+                <div class="address-box">
+
                     <div>
-                       <p>Киев, пр. Отрадный, 103</p>
-                       <a href="mailto:info@bergen.com.ua">info@bergen.com.ua</a> 
+                        <p>Киев, пр. Отрадный, 103</p>
+                        <a href="mailto:info@bergen.com.ua">info@bergen.com.ua</a>
                     </div>
                     <div>
                         <p>+38 (044) 684 52 85</p>
                         <p>+38 (044) 220 30 22</p>
                     </div>
-               
-              
-
-                    
                 </div>
             </div>
-       </div>
-       <a href="#"><img src="img/realist.png" alt="" class="realist"></a>
-   </footer>
-
+        </div>
+        <a href="#"><img src="img/realist.png" alt="" class="realist"></a>
+    </footer>
 </body>
 </html>

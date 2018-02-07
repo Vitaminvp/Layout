@@ -115,7 +115,8 @@ header{
 .topmenu .topmenu__item {
     
 }
-.topmenu__link {
+.topmenu__link,
+.topmenu__link:visited{
     text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
     color: white;
     font-size: 1rem;
@@ -132,6 +133,11 @@ header{
     color: #ff0033;
     border-color: white;
     background-color: white;
+    text-decoration: none;
+}
+.topmenu__link:active,
+.topmenu__link:visited{
+    text-decoration: none;
 }
 .ml{
     justify-content: flex-end;
@@ -162,6 +168,7 @@ section{
 .content {
     height: 61rem;
     background: url(../img/block.png) center top no-repeat;
+/*    background-size: cover;*/
     
 }
 .content__box{
@@ -365,7 +372,6 @@ footer{
         margin: 0.2rem 0.1rem 0;
         padding: 0.5rem 1rem;
         width: 10rem;
-        
     }
     .ml li:last-child{
         margin-right: 0;
@@ -444,9 +450,36 @@ footer{
         font-size: 1rem;
     }
     .content__box {
-        padding-top: 29rem;
+        padding-top: 32rem;
     }
     .address p {
         font-size: .8rem;
+    }
+}
+@media (max-width: 425px){
+    .content__box {
+        padding-top: 30rem;
+    }
+    .topmenu .topmenu__link {
+        width: 9.5rem;
+    }
+}
+@media (max-width: 320px){
+    .content__box {
+        padding-top: 28.5rem;
+    }
+    .content__text {
+        padding: 0;
+    }
+    .bottommenu__link {
+        font-size: 0.9rem;
+        margin-right: 0;
+        font-size: 0.9rem;
+    }
+    .bottommenu__item+.bottommenu__item{
+        margin-left: 0.5rem;
+    }
+    .address-box div+div {
+        margin-right: 0;
     }
 }

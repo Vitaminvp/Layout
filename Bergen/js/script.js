@@ -40,3 +40,5 @@ $(window).on('mousemove', function(e){
        $(el).css({'transform': translate});
    });
 });
+
+new WOW().init();
