@@ -81,14 +81,9 @@ h3{
 }
 
 .slick-dots li{
-    margin: 5px
+    margin: 5px;
 }
 .slick-dots li button{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
     border: none;
     width: 12px;
     height: 12px;
@@ -260,7 +255,7 @@ section.about{
     align-items: center;
 }
 .h2_box .h2_header{
-    width: 240px;
+    width: 320px;
     text-align: right;
     margin-right: 40px;
     color: #0d0d0d;
@@ -934,7 +929,8 @@ cite{
     font-size: 58px;
     color: white;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .portfolio-slider{
     position: relative;
@@ -944,6 +940,7 @@ cite{
 }
 .portfolio-arrows .slick-prev,
 .portfolio-arrows .slick-next {
+
     width: 35px;
     height: 35px;
     background-color: white;
@@ -1382,6 +1379,9 @@ cite{
 .logo__item{
     margin: 10px;
 }
+.logo__item:hover{
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
 
 .contact-info{
     display: -moz-flex;
@@ -1445,6 +1445,7 @@ cite{
     color: white;
 }
 .form_control{
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
