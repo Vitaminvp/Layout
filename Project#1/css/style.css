@@ -1026,16 +1026,15 @@ cite{
     margin: 0 30px 60px;
 }
 .awesome__item-img{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+
     position: relative;
     background-color: #b7b7b7;
     height: 300px;
+}
+.awesome__item-img img{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
 }
 .awesome__item-img .icon-camera{
     position: absolute;
@@ -1043,7 +1042,22 @@ cite{
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 58px;
+    z-index: 1;
     
+}
+.awesome__item-block{
+    z-index: 3;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 .awesome__item-img h3{
     display: inline-block;
@@ -1052,6 +1066,7 @@ cite{
     margin: 0;
     background-color: #fff;
     padding: 30px 20px 15px;
+    
 }
 .awesome__item-info{
     
@@ -1086,12 +1101,12 @@ cite{
 
     color: #0d0d0d;
     font-size: 14px;
-    
+    padding: 10px 25px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 32px;
     border: 2px solid #f39c12;   
-    width: 105px;
+/*    width: 105px;*/
     margin-left: 20px;
 }
 .awesome__item-text a:hover{
@@ -1102,4 +1117,72 @@ cite{
     color: white;
     background-color: #f39c12;
     padding: 12px;
+}
+
+
+/*-----------------------------------CONTACT---------------------------------------------*/
+
+.client__item{
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    width: 256px;
+    height: 162px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+.contact-form{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.contact-form__text{
+    position: relative;
+    
+}
+.contact-form__text span,
+.contact-form__text [type=text],
+.contact-form__text [type=email]{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    
+}
+.contact-form__text span{
+    position: absolute;
+    color: grey;
+    padding: 17px 10px 10px 28px;
+    
+}
+.contact-form__text [type=text],
+.contact-form__text [type=email],
+.contact-form__text textarea{
+    width: 100%;
+    margin: 5px 0;
+    border: none;
+    font-size: 15px;
+    padding: 10px 30px 10px 70px;
+    background-color: white;
+    border: 2px solid #f39c12;
+}
+.contact-form__text textarea{
+    padding-left: 90px;
+}
+.contact-form__text i{
+    position: absolute;
+    top: 22px;
+    right: 20px;
+}
+input[typr=text]:focus {
+    color: #f39c12;
 }
