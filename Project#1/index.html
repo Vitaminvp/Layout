@@ -9,9 +9,16 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:700|Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<!--    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="css/icomoon.css" type="text/css">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
+<!--    <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCV10q0Rl_FceX8MzUMTXstz1QeuTiE4qw"></script>-->
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV10q0Rl_FceX8MzUMTXstz1QeuTiE4qw&callback=initMap">
+    </script>
     <script src="js/script.js" type="text/javascript"></script>
 </head>
 
@@ -31,12 +38,36 @@
                     </ul>
                 </nav>
             </div>
-            <div class="h1_box">
-                <h1><span class="first_span">Best Creative Studio</span>
-                    <span class="center_span">Design / Branding / WordPres</span>
-                    <span class="last_span">We Make Great Ideas Happen</span></h1>
-                <button class="btn">Learn More</button>
+            <div class="header-slider">
+                
+                <div class="h1_box">
+                    <h1><span class="first_span">Best Creative Studio</span>
+                        <span class="center_span">Design / Branding / WordPres</span>
+                        <span class="last_span">We Make Great Ideas Happen</span></h1>
+                    <button class="btn">Learn More</button>
+                </div>
+                <div class="h1_box">
+                    <h1><span class="first_span">Best Creative Studio 2</span>
+                        <span class="center_span">Design / Branding / WordPres</span>
+                        <span class="last_span">We Make Great Ideas Happen</span></h1>
+                    <button class="btn">Learn More</button>
+                </div>
+                <div class="h1_box">
+                    <h1><span class="first_span">Best Creative Studio 3</span>
+                        <span class="center_span">Design / Branding / WordPres</span>
+                        <span class="last_span">We Make Great Ideas Happen</span></h1>
+                    <button class="btn">Learn More</button>
+                </div>
+                <div class="h1_box">
+                    <h1><span class="first_span">Best Creative Studio 4</span>
+                        <span class="center_span">Design / Branding / WordPres</span>
+                        <span class="last_span">We Make Great Ideas Happen</span></h1>
+                    <button class="btn">Learn More</button>
+                </div>
             </div>
+            
+            
+            
         </div>
     </header>
     <section class="about">
@@ -322,11 +353,23 @@
     </section>
     <section class="block">
         <div class="wrapper">
-            <div class="blockq2-box">
-                <cite>Maria Jones</cite>
-                <blockquote>“Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.”</blockquote>
-                <img src="img/girl.png" alt="">
-            </div>
+           <div class="blockq-slider">
+                <div class="blockq2-box">
+                    <cite>Maria Jones</cite>
+                    <blockquote>“Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.”</blockquote>
+                    <img src="img/girl.png" alt="">
+                </div>
+                <div class="blockq2-box">
+                    <cite>Maria Jones</cite>
+                    <blockquote>“Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.”</blockquote>
+                    <img src="img/girl.png" alt="">
+                </div>
+                <div class="blockq2-box">
+                    <cite>Maria Jones</cite>
+                    <blockquote>“Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.”</blockquote>
+                    <img src="img/girl.png" alt="">
+                </div>
+           </div>
         </div>
 
     </section>
@@ -337,9 +380,19 @@
                 <p class="h2_text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
             </div>
             <div class="portfolio__box">
-                <div class="portfolio__img">
-                    <span class="icon-camera"></span>
-                </div>
+               <div class="portfolio-slider">
+                    <div class="portfolio__img">
+                        <span class="icon-camera"></span>
+                    </div>
+                    <div class="portfolio__img">
+                        <span class="icon-bulb"></span>
+                    </div>
+                    <div class="portfolio__img">
+                        <span class="icon-params"></span>
+                    </div>
+               </div>
+               <div class="portfolio-arrows"></div>
+                
                 <div class="portfolio__name">Digital ArtWork</div>
                 <div class="portfolio__position">Graphic Design</div>
             </div>
@@ -530,17 +583,17 @@
     </section>
     <section class="block">
         <div class="wrapper">
-            <div class="clients">
-                <div class="client__item">
+            <div class="logo__items">
+                <div class="logo__item">
                     <div class="client__rect"><a href="#"><img src="img/1.png" alt=""></a></div>
                 </div>
-                <div class="client__item">
+                <div class="logo__item">
                     <div class="client__rect"><a href="#"><img src="img/2.png" alt=""></a></div>
                 </div>
-                <div class="client__item">
+                <div class="logo__item">
                     <div class="client__rect"><a href="#"><img src="img/3.png" alt=""></a></div>
                 </div>
-                <div class="client__item">
+                <div class="logo__item">
                     <div class="client__rect"><a href="#"><img src="img/4.png" alt=""></a></div>
                 </div>
             </div>
@@ -554,22 +607,47 @@
             </div> 
             
             <div class="contact-info">
-                <div class="contact-form">
+                <div class="contact-block">
                    <h3>Drop Us A Message</h3>
                     <form action="#" class="contact-form">
-                        <div class="contact-form__text"><span>Mike</span><input type="text"><i class="far fa-user"></i></div>
-                        <div class="contact-form__text"><span>Email</span><input type="email"><i class="far fa-envelope"></i></div>
-                        <div class="contact-form__text"><span>Message</span><textarea name="" id="" cols="30" rows="10"></textarea><i class="fas fa-pencil-alt"></i></div>
+                        <div class="contact-form__text"><input type="text" placeholder="Mike" class="form_control"><i class="far fa-user"></i></div>
+                        <div class="contact-form__text"><input type="email" placeholder="Email" class="form_control"><i class="far fa-envelope"></i></div>
+                        <div class="contact-form__text"><textarea name="" id=""  placeholder="Message" class="form_control"></textarea><i class="fas fa-pencil-alt"></i></div>
+                        <button class="btn">Submit</button>
                     </form>
                 </div>
                 <div class="contact-text">
-                    
+                    <h3>Contact Info</h3>
+                    <p >Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>  
+                    <ul class="contact-list">
+                        <li class="contact-list__item"><span><i class="fa fa-map-marker"></i></span>13/2 Elizabeth St, Melbourne VIC 3000, Australia</li>
+                        <li class="contact-list__item"><span><i class="fa fa-phone"></i></span><a href="tel:+61 3146 8728">+61 3146 8728</a>, <a href="tel:+61 0987 6543">+61 0987 6543</a></li>
+                        <li class="contact-list__item"><span><i class="fa fa-envelope"></i></span><a href="mailto:support@envato.net">support@envato.net</a></li>
+                    </ul>
                 </div>
             </div>   
         </div>  
     </section>
-    
-    
+    <section id="map">
+        
+    </section>
+    <footer>
+       <div class="wrapper">
+            <div class="footer_soc">
+            <div class="credits">&copy; MINI 2014, All Right Reserves  <span>|</span> Designed By bigpsfan & Metrothemes</div>
+                <ul class="footer_soc_list">
+                    <li class="footer_soc_list__item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="footer_soc_list__item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="footer_soc_list__item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="footer_soc_list__item"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="footer_soc_list__item"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                    <li class="footer_soc_list__item"><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    <li class="footer_soc_list__item"><a href="#"><i class="fa fa-rss"></i></a></li>
+                </ul>
+            </div>
+       </div>
+    </footer>
+
 </body>
 
 </html>

@@ -32,5 +32,68 @@ $(function() {
 
   });
 
+    
+    $('.header-slider, .blockq-slider').slick({
+      arrows: false,
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+    });
+	  
+    $('.portfolio-slider').slick({
+      arrows: true,
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      appendArrows: '.portfolio-arrows',
+      prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-caret-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fa fa-caret-right"></i></button>'
+    });
+	
+    
+
+    
+    
+    
+    
+    
 });
 })(jQuery);
+
+    function initMap() {
+        var coordinates = {lat: 50.471992, lng: 30.510146};
+        var  markerImg = "img/girl.png";
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          disableDefaultUI: true,
+          scrollwheel: false,
+          center: coordinates
+        });
+        var marker = new google.maps.Marker({
+          position: coordinates,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          icon: markerImg
+        });
+      }
+//    function initMap(){
+//        var coordinates = {lat: 50.471992, lng: 30.510146};
+//        markerImg = "img/girl.png";
+//            
+//        map = new google.maps.Map(document.getElementById('map'),{
+//            center: coordinates,
+//            zoom: 16,
+//            disableDefaultUI: true,
+//            scrollwheel: false,
+//        });
+//        marker = new google.maps.Marker({
+//            position:  coordinates,
+//            map: map,
+//            animation: google.maps.Animation.DROP,
+//            icon: markerImg;
+//        });
+//    };
+//    
+//    google.maps.ivent.addDomListener(window, 'load', initMap);
