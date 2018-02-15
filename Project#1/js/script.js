@@ -49,7 +49,15 @@ $(function() {
       slidesToShow: 1,
       appendArrows: '.portfolio-arrows',
       prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-caret-left"></i></button>',
-      nextArrow: '<button type="button" class="slick-next"><i class="fa fa-caret-right"></i></button>'
+      nextArrow: '<button type="button" class="slick-next"><i class="fa fa-caret-right"></i></button>',
+        responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        dots: false
+      }
+    }
+  ]
     });
 	
     
