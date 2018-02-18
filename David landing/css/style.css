@@ -56,19 +56,19 @@ h1, h2, h3{
 .btn-green{
     color: #fff;
     background-color: #63b945;
-    border: 2px solid #63b945;
+    border: 0.15vw solid #63b945;
 }
 .btn-green:hover{
-    border: 2px solid #6df53a;
+    border: 0.15vw solid #6df53a;
     background-color: #6df53a;
 }
 .btn-invgreen{
-    border: 2px solid #63b945;
+    border: 0.15vw solid #63b945;
     color: #63b945;
     padding: 1.8vh 1.45vw;
 }
 .btn-invgreen:hover{
-    border: 2px solid #6df53a;
+    border: 0.15vw solid #6df53a;
     color: #6df53a;
 }
 /* -------------------- HEADER -------------------- */
@@ -148,7 +148,7 @@ header{
     padding: 5.8vh;
 }
 .prog-list li{
-    font-size: 1.17vw;
+    font-size: 1.08vw;
     line-height: 1.76vw;
     white-space: nowrap;
 }
