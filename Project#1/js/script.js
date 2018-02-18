@@ -137,6 +137,75 @@ $(function() {
     });
     
     
+    var todo = true;
+    
+$(window).scroll(function(){
+    if(!todo) return false;
+    var topPos = $('#clients').offset().top;
+    var topWind = $(window).scrollTop();
+    if( (topWind > topPos - 200)||$(window).height() + topWind == $(document).height()){
+        
+        
+        $('.client__detail span').each(function(){
+            $(this).addClass('visible').prop('counter', 0).animate(
+                {
+                    counter: $(this).text()
+                },
+                {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function(now){
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            }); todo = false;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+//            var my_time = 2;
+//            $('.client__detail span').each(function(){
+//               $(this).addClass('visible'); 
+//               var i=1;
+//               var num = $(this).data('num');
+//               var step = 1000 * my_time / num;
+//               var that = $(this);
+//               var int = setInterval(function(){
+//                   if(i<=num){
+//                       if(num>1000) i+=7;
+//                       else i++;
+//                       that.html(i);
+//
+//                   }else{
+//                       clearInterval(int);
+//                       that.html(num);
+//                       todo = false;
+//                   }
+//               }, step);
+//            });
+   }
+    
+});
+ 
+    
     
     
     

@@ -101,8 +101,8 @@ button.active span {
 
 .slick-dots li button {
     border: none;
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     text-indent: -9999px;
     overflow: hidden;
     border-radius: 50%;
@@ -787,6 +787,12 @@ cite {
     display: block;
     font-size: 45px;
     padding: 10px;
+    transition: all 1s;
+    opacity: 0;
+}
+.client__detail span.visible{
+    opacity: 1 ;
+    
 }
 
 .design {
@@ -1972,7 +1978,7 @@ footer {}
 
 @media (max-width: 992px) {
     .wrapper {
-        margin: 0px 0px;
+        margin: 0px auto;
     }
 
     .logo {
