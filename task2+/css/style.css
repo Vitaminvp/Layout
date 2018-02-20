@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Totshrift';
+    src: url('../fonts/totshriftbold-webfont.woff2') format('woff2'),
+    url('../fonts/totshriftbold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+    url('../fonts/proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #292929;
+    width: 100%;
+    color: #6f6f6f;
+    font-size: 16px;
+    line-height: 52px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+
+.header a {
+    color: #6f6f6f;
+    text-decoration: underline;
+}
+
+.header a:hover {
+    color: #6f6f6f;
+    text-decoration: none;
+}
+
+.content {
+    padding-top: 200px;
+    background: #fff url(../img/bg.png) center top no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.img-block {
+
+    text-align: center;
+    /*    margin: 0 auto 0;*/
+    display: block;
+    position: relative;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.img a {
+    display: inline-block;
+}
+
+
+.gift {
+    display: inline-block;
+    -webkit-filter: drop-shadow(0px 0px 110px 120px rgba(255, 255, 255, 1));
+    filter: drop-shadow(0px 0px 110px 120px rgba(255, 255, 255, 1));
+}
+
+.shadowfilter {
+    -webkit-filter: drop-shadow(0px -60px 13px rgba(255, 255, 255, 1.5));
+    filter: drop-shadow(0px -60px 13px 120px rgba(255, 255, 255, 1.5));
+}
+
+.btn {
+    text-align: center;
+    z-index: 10;
+}
+
+.btn a {
+    font-family: 'Totshrift';
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 68px;
+    background-color: #00ff0c;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(78, 255, 0, 0.35)), color-stop(52%, rgba(52, 105, 0, 0.35)), color-stop(70%, rgba(96, 241, 0, 0.35)), to(rgba(66, 255, 0, 0.35)));
+    background-image: linear-gradient(to top, rgba(78, 255, 0, 0.35) 0%, rgba(52, 105, 0, 0.35) 52%, rgba(96, 241, 0, 0.35) 70%, rgba(66, 255, 0, 0.35) 100%);
+    border-radius: 29px;
+    -webkit-box-shadow: inset 0 0 8.6px 0.5px rgba(24, 255, 0, 0.85);
+    box-shadow: inset 0 0 8.6px 0.5px rgba(24, 255, 0, 0.85);
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    line-height: 58px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn a:hover {
+    background-color: #00ac08;
+}
+
+.pigs {
+    background: url(../img/pigsin.png) center center no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    position: relative;
+}
+
+.pigs-img {
+    max-width: 557px;
+    width: 100%;
+}
+
+.song {
+
+    padding: 30% 15% 10% 25%;
+    text-shadow: 0 0 10.9px #906350;
+    color: #f4d48a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 1;
+}
+
+.bottom {
+    padding: 10px 90px;
+    color: black;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.bottom a {
+    color: black;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 527px) {
+    .header {
+        font-size: 14px;
+    }
+    .song {
+        padding: 20% 10% 10% 20%;
+        font-size: 17px;
+    }
+    .bottom {
+        padding: 10px 60px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .header {
+
+        font-size: 12px;
+    }
+    .song {
+
+        font-size: 16px;
+        padding: 25% 10% 10% 20%;
+    }
+    .bottom {
+        padding: 10px 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .song {
+
+        font-size: 14px;
+        padding: 22% 10% 10% 20%;
+    }
+    .bottom {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .song {
+        padding: 25% 7% 10% 15%;
+        font-size: 13px;
+
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .song {
+        padding: 27% 7% 10% 15%;
+        font-size: 12px;
+
+    }
+
+}
