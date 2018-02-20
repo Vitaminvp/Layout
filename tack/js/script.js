@@ -108,7 +108,7 @@ function setNullsBefore(m, n) {
 
 function timerStart() {
 
-	startTime = 120000;       // Время задаеться здесь.
+	startTime = 12000;       // Время задаеться здесь.
 
 	timerTime = setInterval(
 		function () {
