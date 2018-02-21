@@ -166,6 +166,8 @@ body {
 @media screen and (max-width: 527px) {
     .header {
         font-size: 14px;
+        line-height: 20px;
+        padding: 5px;
     }
     .song {
         padding: 20% 10% 10% 20%;
