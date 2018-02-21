@@ -12,7 +12,6 @@ btn.addEventListener("click", function () {
 }, false);
 
 
-
 function myModal2() {
 	timerStop();
 	var divMod2 = document.createElement("div");
@@ -58,8 +57,6 @@ function myModal() {
 	};
 }
 
-
-
 var Timer = {
 
 	createWrapper(divCont) {
@@ -97,7 +94,6 @@ var Timer = {
 	}
 }
 
-
 function setNullsBefore(m, n) {
 	var m = String(m);
 	while (m.length < n) {
@@ -108,7 +104,7 @@ function setNullsBefore(m, n) {
 
 function timerStart() {
 
-	startTime = 12000;       // Время задаеться здесь.
+	startTime = 120000;       // Время задаеться здесь, в милисекундах.
 
 	timerTime = setInterval(
 		function () {
