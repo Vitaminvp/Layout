@@ -45,8 +45,8 @@
     background-color: rgba(0,0,0, 0.8);
 }
 .modCont{
-    text-align: center;
-    height: 100px;
+	height: 200px;
+	text-align: center;
     position: relative;
     background-color: #fff;
     margin: 15% auto;
