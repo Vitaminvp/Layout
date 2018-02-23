@@ -214,7 +214,7 @@ $(window).scroll(function(){
 
     function initMap() {
         var coordinates = {lat: 50.471992, lng: 30.510146};
-        var  markerImg = "img/girl.png";
+        var  markerImg = "img/marker.png";
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
           disableDefaultUI: true,
