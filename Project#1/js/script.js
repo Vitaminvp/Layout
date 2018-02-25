@@ -205,7 +205,16 @@ $(window).scroll(function(){
     
 });
  
-    
+    $('section').on('click', function() {
+    if ($(this).hasClass('about')) {
+      var movePos = $(window).scrollTop() + $(window).height();
+    }
+    if ($(this).hasClass('set_box')) {
+      var movePos = $(window).scrollTop() - $(window).height();
+    }
+    $('html, body').animate({
+      scrollTop: movePos}, 600);
+  });
     
     
     

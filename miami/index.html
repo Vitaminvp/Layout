@@ -18,30 +18,320 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
+<div class="container">
 	<header id="header" class="d-flex align-content-between">
 	    <div class="header-top d-flex justify-content-between align-items-center wrapper">
         
 	        <div><a href="tel:8 800 500 50 50">8 800 500 50 50</a></div>
-	        <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="76" viewBox="0 0 115 76">
-  <image id=""  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABMCAMAAABpsXisAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACylBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAADXDOhLAAAA7HRSTlMAkKAZ9/wkkh76mCGiwCsq/kDRfV37hwqoFjcP30st9AJo7+MBuKwcsIiZMcmTZ/JwBBQOkf1BzjayjKdX5+sDw5U4JbudcVkI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"/>
-</svg></div>
+	        <div class="logo"><svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 450.6 292.9" style="enable-background:new 0 0 450.6 292.9;" xml:space="preserve">
+<g>
+	<path class="st0" d="M300.9,130.3c3.4,0,6.2,2.7,6.2,6c0,3.4-2.7,6.1-6.2,6.1c-3.5,0-6.3-2.7-6.3-6.1
+		C294.6,132.9,297.4,130.3,300.9,130.3L300.9,130.3z M300.8,131.5c-2.6,0-4.7,2.2-4.7,4.8c0,2.7,2,4.8,4.7,4.8
+		c2.6,0,4.6-2.1,4.6-4.8C305.5,133.7,303.5,131.5,300.8,131.5L300.8,131.5z M299.9,139.5h-1.4v-6c0.6-0.1,1.3-0.2,2.3-0.2
+		c1.1,0,1.7,0.2,2.1,0.5c0.4,0.3,0.6,0.7,0.6,1.3c0,0.7-0.6,1.2-1.3,1.4v0.1c0.6,0.2,0.9,0.7,1.1,1.5c0.2,0.9,0.3,1.3,0.4,1.5h-1.5
+		c-0.2-0.2-0.3-0.7-0.5-1.5c-0.1-0.6-0.5-0.9-1.3-0.9h-0.7V139.5z M299.9,136.1h0.7c0.8,0,1.4-0.3,1.4-0.9c0-0.6-0.4-0.9-1.3-0.9
+		c-0.4,0-0.6,0-0.8,0.1V136.1z"/>
+	<polygon class="st0" points="213,0 210.7,0 172,75 107.2,35.2 103.3,35.1 136.4,137.6 158.8,134.6 139.4,77.5 182.7,102.6 
+		190.6,86.4 190.6,86.3 211.6,44.6 229.3,81.4 248.2,70.4 	"/>
+	<polygon class="st0" points="315.5,35.2 211.4,98.5 195.8,89.4 188.1,105.7 210,118.5 211.4,118.5 212.7,118.5 283.3,77.5 
+		263.9,134.6 286.3,137.6 319.4,35.1 	"/>
+</g>
+<g>
+	<polygon class="st0" points="56,206.6 4.7,159.6 1,159.6 1,241.3 17.4,241.3 17.4,192 54.7,226 57.2,226 92.5,192.1 92.5,241.3 
+		109,241.3 109,159.6 105.2,159.6 	"/>
+	<rect x="129.2" y="160.9" class="st0" width="16.4" height="80.4"/>
+	<path class="st0" d="M209.3,158.5l-55.6,82.7h17.6l9.9-14.8h59.3l10.2,14.8H269l-56.7-82.7H209.3z M230.8,212.3h-40.2l19.9-29.6
+		L230.8,212.3z"/>
+	<polygon class="st0" points="330.8,206.6 279.5,159.6 275.8,159.6 275.8,241.3 292.2,241.3 292.2,192 329.4,226 331.9,226 
+		367.3,192.1 367.3,241.3 383.7,241.3 383.7,159.6 380,159.6 	"/>
+	<rect x="404" y="160.9" class="st0" width="16.4" height="80.4"/>
+</g>
+<path class="st0" d="M24.3,293.9c-13.1,0-22.5-5.5-22.5-15.3c0-9.8,10-15.7,22.2-15.7c9.3,0,13.8,1.7,15.6,2.4v3.6l-0.2,0.1
+	c-2.3-1.5-6.4-3.9-15.3-3.9c-10.4,0-17.7,4.4-17.7,13.4c0,8.6,6.3,13,17.9,13c8,0,12-2.1,16-5.2l0.2,0.1v3.8
+	C38.4,291.5,33,293.9,24.3,293.9z"/>
+<path class="st0" d="M66,293.9c-11.3,0-21.6-5.1-21.6-15.4c0-10.7,10.9-15.6,21.6-15.6c10.7,0,21.6,4.8,21.6,15.5
+	C87.6,288.7,77.3,293.9,66,293.9z M65.9,291.6c10.9,0,17.2-4.8,17.2-13.1c0-8.4-6.6-13.3-17.2-13.3c-10.5,0-17,4.9-17,13.2
+	C48.9,286.7,55,291.6,65.9,291.6z"/>
+<path class="st0" d="M94.4,263.3h3.8c8.8,8.3,19.6,17.9,28.5,25.7c0.1-6.8,0.1-19.3,0-25.6l0.2-0.1h2.4l0.2,0.2
+	c-0.2,8.6-0.2,20.7,0,29.8l-0.2,0.2h-3.6c-7.6-7.3-20.1-18.5-28.6-26c-0.1,6-0.1,18.3,0,25.9l-0.2,0.1h-2.5l-0.1-0.1
+	c0.1-7.4,0.1-22.9,0-29.9L94.4,263.3z"/>
+<path class="st0" d="M137.9,293.4c0.2-9.3,0.2-22.6,0-29.6l0.2-0.2c3.7-0.1,6.9-0.6,15.4-0.6c12.3,0,23.2,5.1,23.2,15.8
+	c0,9.6-10.5,15.2-23.2,15.2c-7.5,0-12-0.4-15.4-0.4L137.9,293.4z M142,291c2.6,0.2,4.2,0.7,10.8,0.7c13.1,0,19.3-4.8,19.3-12.9
+	c0-8.8-6.5-13.6-19.5-13.6c-5.1,0-7.6,0.4-10.6,0.9C141.9,271,141.9,282.8,142,291z"/>
+<path class="st0" d="M203,293.9c-11.3,0-21.6-5.1-21.6-15.4c0-10.7,10.9-15.6,21.6-15.6c10.7,0,21.6,4.8,21.6,15.5
+	C224.6,288.7,214.3,293.9,203,293.9z M202.9,291.6c10.9,0,17.2-4.8,17.2-13.1c0-8.4-6.6-13.3-17.2-13.3c-10.5,0-17,4.9-17,13.2
+	C185.9,286.7,192.1,291.6,202.9,291.6z"/>
+<path class="st0" d="M248.9,293.5h-3.8l-0.1-0.1c0.2-9.3,0.2-23,0-29.9l0.2-0.1h3.8l0.2,0.2c-0.1,4.7-0.2,10.9-0.2,17.2
+	c9.9-6.5,17.1-12,24.3-17.3h5.4l0.1,0.2c-5.3,3.1-11.7,7.4-18.4,12.1c5.6,5.1,13.2,11.9,20.3,17.7l-0.1,0.2h-5.8
+	c-6.6-6.3-11.5-10.6-17.7-15.6l-8.2,5.7c0,3.4,0.1,6.8,0.2,9.8L248.9,293.5z"/>
+<path class="st0" d="M285.9,293.3c0.2-9.3,0.2-22.9,0-29.8l0.1-0.2h3.8l0.2,0.1c-0.2,10.4-0.1,20.1,0,29.9l-0.2,0.1H286L285.9,293.3
+	z"/>
+<path class="st0" d="M299,263.3h3.8c8.8,8.3,19.6,17.9,28.5,25.7c0.1-6.8,0.1-19.3,0-25.6l0.2-0.1h2.4l0.2,0.2
+	c-0.2,8.6-0.2,20.7,0,29.8l-0.2,0.2h-3.6c-7.6-7.3-20.1-18.5-28.6-26c-0.1,6-0.1,18.3,0,25.9l-0.2,0.1h-2.5l-0.1-0.1
+	c0.1-7.4,0.1-22.9,0-29.9L299,263.3z"/>
+<path class="st0" d="M362.7,293.9c-13,0-22.2-5.4-22.2-15.3c0-9.6,10.1-15.7,22-15.7c9.9,0,14.5,1.7,16.3,2.5v4l-0.2,0.1
+	c-2.2-1.8-6.1-4.3-16-4.3c-10.5,0-17.5,4.5-17.5,13.4c0,9,6,13,17.6,13c6.1,0,9.8-1.1,13.2-2.4c0.1-3.4,0.1-5.4,0-10.5l0.2-0.2h3.8
+	l0.2,0.1c-0.2,4.9-0.2,7.7,0,12.1C375.3,292.7,370.4,293.9,362.7,293.9z"/>
+<path class="st0" d="M410.7,280c-4.7-0.8-11.9-0.1-18.2-1.5c-4.3-1-6.6-3.2-6.6-6.9c0-5.2,5-8.7,16.1-8.7c8.9,0,13.3,1.8,15,2.8v3.5
+	l-0.2,0.1c-2-1.7-6.4-4.2-15-4.2c-10.1,0-12.6,2.9-12.6,5.7c0,2.5,1.6,3.9,4.8,4.5c4.9,1,11.7,0.4,17.5,1.3c5,0.7,8,2.8,8,6.9
+	c0,5.8-5.4,10.3-17.9,10.3c-9,0-14.3-2.1-16.5-3.5v-3.9l0.2-0.1c3.5,3.1,8.3,5.3,16.5,5.3c10.4,0,14.1-3,14.1-6.8
+	C416,282.4,414.3,280.6,410.7,280z"/>
+<path class="st0" d="M437.5,160.4v1.6h-3v7.9h-1.9V162h-3v-1.6H437.5z M447.7,169.9l-0.3-5.6c0-0.7,0-1.6-0.1-2.6h-0.1
+	c-0.2,0.8-0.5,1.9-0.8,2.8l-1.7,5.3h-2l-1.7-5.4c-0.2-0.7-0.5-1.8-0.7-2.7h-0.1c0,0.9,0,1.8-0.1,2.6l-0.3,5.6H438l0.7-9.5h2.9
+	l1.6,4.6c0.2,0.7,0.4,1.4,0.6,2.4h0.1c0.2-0.8,0.5-1.7,0.6-2.3l1.6-4.7h2.8l0.7,9.5H447.7z"/>
+</svg>
+</div>
 	        <div class="call"><a href="#">Call to order</a></div>
 	    </div>
 	    <div class="header-bottom">
 	        <nav class="wrapper">
 	            <ul class="d-flex justify-content-between">
-	                <li><a href="#">Home</a></li>                                                                                                                   
+	                <li><a href="#">Home</a></li>                                         
 	                <li><a href="#about">About Us</a></li>
-	                <li><a href="#">Contacts</a></li>
-	                <li><a href="#">Gallery</a></li>
-	                <li><a href="#">Consultation</a></li>
-	                <li><a href="#">Testimonials</a></li>
+	                <li><a href="#contact">Contacts</a></li>
+	                <li><a href="#gallery">Gallery</a></li>
+	                <li><a href="#consultation">Consultation</a></li>
+	                <li><a href="#testimonials">Testimonials</a></li>
 	            </ul>
 	        </nav>
 	    </div>
 	</header>
-	<section id="about">
-	    
+	<section id="about" class="about d-flex justify-content-between align-items-start wrapper">
+	    <div class="about-best">
+	        Miami <strong>best</strong><br>
+            Realry <span>—</span><br>
+            <span>this</span><br>
+	    </div>
+	    <div class="about-text">
+	        <p><strong>Over 50 years experience in love.</strong> <br>
+            Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism, which originated in the music of the early twentieth century, microforms, found a distant historical.</p>
+            <ol>
+                <li>The market leader in real estate since 2003</li>
+                <li>Awards Real Estate Company, 2010, 2011, 2013</li>
+                <li>More than 200 satisfied customers premium segment</li>
+                <li>We focus only on new buildings and high-level doskanalno know this area better than other specialists.</li>
+                <li>Working directly with developers - so have more useful information about the profitable deals</li>
+            </ol>
+            <p><strong>We will never late! <br>Guaranteed secure transaction - 100%</strong></p>
+	    </div>
 	</section>
+	<section class="gallery" id="gallery">
+	    <div class="h2 d-flex flex-column">
+            <h2>gallery</h2>
+	        <div class="h2-under d-flex justify-content-center">
+                <div class="svg ">
+                    <svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 20 13" style="enable-background:new 0 0 20 13;" xml:space="preserve">
+                    <path class="st0" d="M9.8,13h0.2l3.6-7.1l6,3.8l0.4,0L16.9,0l-2.1,0.3l1.8,5.4l-4-2.4l-0.7,1.5l0,0L10,8.8L8.3,5.3l-1.8,1L9.8,13z
+                         M0.4,9.7l9.6-6l1.4,0.9L12.2,3l-2-1.2H9.9L3.3,5.7l1.8-5.4L3.1,0L0,9.7L0.4,9.7z"/>
+                    </svg>
+               </div>
+            </div>
+	    </div>
+	    <div class="wrapper">
+            <div class="gallery-item">
+                <div class="gallery-item__imgs">
+                    <img src="img/1.jpg" alt="">
+                    <img src="img/2.jpg" alt="">
+                </div>
+                <div class="gallery-item__desc">
+                    Marina Palms / <span>North Miami Beach, FL 33162</span> 
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item__imgs">
+                    <img src="img/3.jpg" alt="">
+                    <img src="img/4.jpg" alt="">
+                </div>
+                <div class="gallery-item__desc">
+                    Marina Palms / <span>North Miami Beach, FL 33162</span> 
+                </div>
+            </div>
+            <div class="gallery-item d-flex justify-content-between align-items-center">
+                <div class="gallery-item__imgs">
+                    <img src="img/5.jpg" alt="">
+                    <img src="img/6.jpg" alt="">
+                </div>
+                <div class="gallery-item__desc">
+                    Marina Palms / <span>North Miami Beach, FL 33162</span> 
+                </div>
+            </div>
+	    </div>
+	    <div class="gallery-all">
+	        <a class="btn inline" href="#">View all</a>
+	    </div>
+	</section>
+	<section id="consultation" class="consultation">
+       	    <div class="h2 d-flex flex-column">
+            <h2>consultation</h2>
+	        <div class="h2-under d-flex justify-content-center">
+                <div class="svg">
+                    <svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 20 13" style="enable-background:new 0 0 20 13;" xml:space="preserve">
+                    <path class="st0" d="M9.8,13h0.2l3.6-7.1l6,3.8l0.4,0L16.9,0l-2.1,0.3l1.8,5.4l-4-2.4l-0.7,1.5l0,0L10,8.8L8.3,5.3l-1.8,1L9.8,13z
+                         M0.4,9.7l9.6-6l1.4,0.9L12.2,3l-2-1.2H9.9L3.3,5.7l1.8-5.4L3.1,0L0,9.7L0.4,9.7z"/>
+                    </svg>
+               </div>
+            </div>
+	    </div>
+        <div class="c-items d-flex justify-content-between align-content-start wrapper">
+            <div class="c-gift">
+                <h3>How long have <br>
+                you do yourself a gift?</h3>
+                <p>The procedural change mezzo forte starts izoritmichesky pickup at these moments stop LA Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism, which originated in the music of the early twentieth century, microforms, found a distant historical</p>
+            </div>
+            <div class="c-form">
+                <form action="#">
+                    <input type="text" placeholder="Name" class="form-control">
+                    <input type="phone" placeholder="Phone" class="form-control">
+                    <input type="mail" placeholder="Email" class="form-control">
+                    <button type="submit" class="btn w100">Consultation</button>
+                </form>
+            </div>
+        </div>
+
+	</section>
+	<section id="testimonials" class="testimonials">
+       	    <div class="h2 d-flex flex-column">
+            <h2>Testimonials</h2>
+	        <div class="h2-under d-flex justify-content-center">
+                <div class="svg">
+                    <svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 20 13" style="enable-background:new 0 0 20 13;" xml:space="preserve">
+                    <path class="st0" d="M9.8,13h0.2l3.6-7.1l6,3.8l0.4,0L16.9,0l-2.1,0.3l1.8,5.4l-4-2.4l-0.7,1.5l0,0L10,8.8L8.3,5.3l-1.8,1L9.8,13z
+                         M0.4,9.7l9.6-6l1.4,0.9L12.2,3l-2-1.2H9.9L3.3,5.7l1.8-5.4L3.1,0L0,9.7L0.4,9.7z"/>
+                    </svg>
+               </div>
+            </div>
+	    </div>
+        <div class="t-items d-flex justify-content-around wrapper">
+            <div class="t-item">
+               <div class="img">
+                    <img src="img/person.jpg" alt="">
+               </div>
+                <h4>Stev Joni</h4>
+                <h5>Founder Lucoil</h5>
+                <p>Nice work, Certificates National Association of Realtors (USA).</p>
+            </div>
+            <div class="t-item">
+               <div class="img">
+                    <img src="img/person.jpg" alt="">
+               </div>
+                <h4>Stev Joni</h4>
+                <h5>Founder Lucoil</h5>
+                <p>Nice work, Certificates National Association of Realtors (USA).</p>
+            </div>            <div class="t-item">
+               <div class="img">
+                    <img src="img/person.jpg" alt="">
+               </div>
+                <h4>Stev Joni</h4>
+                <h5>Founder Lucoil</h5>
+                <p>Nice work, Certificates National Association of Realtors (USA).</p>
+            </div>
+        </div>
+
+	</section>
+		<section id="contact" class="contact">
+       	    <div class="h2 d-flex flex-column">
+            <h2>contact</h2>
+	        <div class="h2-under d-flex justify-content-center">
+                <div class="svg">
+                    <svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 20 13" style="enable-background:new 0 0 20 13;" xml:space="preserve">
+                    <path class="st0" d="M9.8,13h0.2l3.6-7.1l6,3.8l0.4,0L16.9,0l-2.1,0.3l1.8,5.4l-4-2.4l-0.7,1.5l0,0L10,8.8L8.3,5.3l-1.8,1L9.8,13z
+                         M0.4,9.7l9.6-6l1.4,0.9L12.2,3l-2-1.2H9.9L3.3,5.7l1.8-5.4L3.1,0L0,9.7L0.4,9.7z"/>
+                    </svg>
+               </div>
+            </div>
+	    </div>
+        <div class="c-items d-flex justify-content-between align-content-start wrapper">
+            <div class="c-info">
+                       <a href="mailto:Hello@miami.com" class="pb">Hello@miami.com</a>
+                       <a href="tel:">8 800 678 78 78</a>
+                       <a href="tel:"  class="pb">8 800 700 98 98</a>
+                        
+                        <p>400 first ave. n.<br>
+                        suite 700<br>
+                        Minneapolis, MN 55401</p>
+            </div>
+            <div class="c-form">
+                <form action="#">
+                    <input type="text" placeholder="Name" class="form-control">
+                    <input type="mail" placeholder="Email" class="form-control">
+                    <textarea name="" id="" placeholder="Message"></textarea>
+                    <button type="submit" class="btn w100">write to us</button>
+                </form>
+            </div>
+        </div>
+
+	</section>
+	
+	
+	
+	
+	
+</div>	
+	<footer id="footer" class="footer d-flex ">
+	    <div class="logo"><svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 450.6 292.9" style="enable-background:new 0 0 450.6 292.9;" xml:space="preserve">
+<g>
+	<path class="st0" d="M300.9,130.3c3.4,0,6.2,2.7,6.2,6c0,3.4-2.7,6.1-6.2,6.1c-3.5,0-6.3-2.7-6.3-6.1
+		C294.6,132.9,297.4,130.3,300.9,130.3L300.9,130.3z M300.8,131.5c-2.6,0-4.7,2.2-4.7,4.8c0,2.7,2,4.8,4.7,4.8
+		c2.6,0,4.6-2.1,4.6-4.8C305.5,133.7,303.5,131.5,300.8,131.5L300.8,131.5z M299.9,139.5h-1.4v-6c0.6-0.1,1.3-0.2,2.3-0.2
+		c1.1,0,1.7,0.2,2.1,0.5c0.4,0.3,0.6,0.7,0.6,1.3c0,0.7-0.6,1.2-1.3,1.4v0.1c0.6,0.2,0.9,0.7,1.1,1.5c0.2,0.9,0.3,1.3,0.4,1.5h-1.5
+		c-0.2-0.2-0.3-0.7-0.5-1.5c-0.1-0.6-0.5-0.9-1.3-0.9h-0.7V139.5z M299.9,136.1h0.7c0.8,0,1.4-0.3,1.4-0.9c0-0.6-0.4-0.9-1.3-0.9
+		c-0.4,0-0.6,0-0.8,0.1V136.1z"/>
+	<polygon class="st0" points="213,0 210.7,0 172,75 107.2,35.2 103.3,35.1 136.4,137.6 158.8,134.6 139.4,77.5 182.7,102.6 
+		190.6,86.4 190.6,86.3 211.6,44.6 229.3,81.4 248.2,70.4 	"/>
+	<polygon class="st0" points="315.5,35.2 211.4,98.5 195.8,89.4 188.1,105.7 210,118.5 211.4,118.5 212.7,118.5 283.3,77.5 
+		263.9,134.6 286.3,137.6 319.4,35.1 	"/>
+</g>
+<g>
+	<polygon class="st0" points="56,206.6 4.7,159.6 1,159.6 1,241.3 17.4,241.3 17.4,192 54.7,226 57.2,226 92.5,192.1 92.5,241.3 
+		109,241.3 109,159.6 105.2,159.6 	"/>
+	<rect x="129.2" y="160.9" class="st0" width="16.4" height="80.4"/>
+	<path class="st0" d="M209.3,158.5l-55.6,82.7h17.6l9.9-14.8h59.3l10.2,14.8H269l-56.7-82.7H209.3z M230.8,212.3h-40.2l19.9-29.6
+		L230.8,212.3z"/>
+	<polygon class="st0" points="330.8,206.6 279.5,159.6 275.8,159.6 275.8,241.3 292.2,241.3 292.2,192 329.4,226 331.9,226 
+		367.3,192.1 367.3,241.3 383.7,241.3 383.7,159.6 380,159.6 	"/>
+	<rect x="404" y="160.9" class="st0" width="16.4" height="80.4"/>
+</g>
+<path class="st0" d="M24.3,293.9c-13.1,0-22.5-5.5-22.5-15.3c0-9.8,10-15.7,22.2-15.7c9.3,0,13.8,1.7,15.6,2.4v3.6l-0.2,0.1
+	c-2.3-1.5-6.4-3.9-15.3-3.9c-10.4,0-17.7,4.4-17.7,13.4c0,8.6,6.3,13,17.9,13c8,0,12-2.1,16-5.2l0.2,0.1v3.8
+	C38.4,291.5,33,293.9,24.3,293.9z"/>
+<path class="st0" d="M66,293.9c-11.3,0-21.6-5.1-21.6-15.4c0-10.7,10.9-15.6,21.6-15.6c10.7,0,21.6,4.8,21.6,15.5
+	C87.6,288.7,77.3,293.9,66,293.9z M65.9,291.6c10.9,0,17.2-4.8,17.2-13.1c0-8.4-6.6-13.3-17.2-13.3c-10.5,0-17,4.9-17,13.2
+	C48.9,286.7,55,291.6,65.9,291.6z"/>
+<path class="st0" d="M94.4,263.3h3.8c8.8,8.3,19.6,17.9,28.5,25.7c0.1-6.8,0.1-19.3,0-25.6l0.2-0.1h2.4l0.2,0.2
+	c-0.2,8.6-0.2,20.7,0,29.8l-0.2,0.2h-3.6c-7.6-7.3-20.1-18.5-28.6-26c-0.1,6-0.1,18.3,0,25.9l-0.2,0.1h-2.5l-0.1-0.1
+	c0.1-7.4,0.1-22.9,0-29.9L94.4,263.3z"/>
+<path class="st0" d="M137.9,293.4c0.2-9.3,0.2-22.6,0-29.6l0.2-0.2c3.7-0.1,6.9-0.6,15.4-0.6c12.3,0,23.2,5.1,23.2,15.8
+	c0,9.6-10.5,15.2-23.2,15.2c-7.5,0-12-0.4-15.4-0.4L137.9,293.4z M142,291c2.6,0.2,4.2,0.7,10.8,0.7c13.1,0,19.3-4.8,19.3-12.9
+	c0-8.8-6.5-13.6-19.5-13.6c-5.1,0-7.6,0.4-10.6,0.9C141.9,271,141.9,282.8,142,291z"/>
+<path class="st0" d="M203,293.9c-11.3,0-21.6-5.1-21.6-15.4c0-10.7,10.9-15.6,21.6-15.6c10.7,0,21.6,4.8,21.6,15.5
+	C224.6,288.7,214.3,293.9,203,293.9z M202.9,291.6c10.9,0,17.2-4.8,17.2-13.1c0-8.4-6.6-13.3-17.2-13.3c-10.5,0-17,4.9-17,13.2
+	C185.9,286.7,192.1,291.6,202.9,291.6z"/>
+<path class="st0" d="M248.9,293.5h-3.8l-0.1-0.1c0.2-9.3,0.2-23,0-29.9l0.2-0.1h3.8l0.2,0.2c-0.1,4.7-0.2,10.9-0.2,17.2
+	c9.9-6.5,17.1-12,24.3-17.3h5.4l0.1,0.2c-5.3,3.1-11.7,7.4-18.4,12.1c5.6,5.1,13.2,11.9,20.3,17.7l-0.1,0.2h-5.8
+	c-6.6-6.3-11.5-10.6-17.7-15.6l-8.2,5.7c0,3.4,0.1,6.8,0.2,9.8L248.9,293.5z"/>
+<path class="st0" d="M285.9,293.3c0.2-9.3,0.2-22.9,0-29.8l0.1-0.2h3.8l0.2,0.1c-0.2,10.4-0.1,20.1,0,29.9l-0.2,0.1H286L285.9,293.3
+	z"/>
+<path class="st0" d="M299,263.3h3.8c8.8,8.3,19.6,17.9,28.5,25.7c0.1-6.8,0.1-19.3,0-25.6l0.2-0.1h2.4l0.2,0.2
+	c-0.2,8.6-0.2,20.7,0,29.8l-0.2,0.2h-3.6c-7.6-7.3-20.1-18.5-28.6-26c-0.1,6-0.1,18.3,0,25.9l-0.2,0.1h-2.5l-0.1-0.1
+	c0.1-7.4,0.1-22.9,0-29.9L299,263.3z"/>
+<path class="st0" d="M362.7,293.9c-13,0-22.2-5.4-22.2-15.3c0-9.6,10.1-15.7,22-15.7c9.9,0,14.5,1.7,16.3,2.5v4l-0.2,0.1
+	c-2.2-1.8-6.1-4.3-16-4.3c-10.5,0-17.5,4.5-17.5,13.4c0,9,6,13,17.6,13c6.1,0,9.8-1.1,13.2-2.4c0.1-3.4,0.1-5.4,0-10.5l0.2-0.2h3.8
+	l0.2,0.1c-0.2,4.9-0.2,7.7,0,12.1C375.3,292.7,370.4,293.9,362.7,293.9z"/>
+<path class="st0" d="M410.7,280c-4.7-0.8-11.9-0.1-18.2-1.5c-4.3-1-6.6-3.2-6.6-6.9c0-5.2,5-8.7,16.1-8.7c8.9,0,13.3,1.8,15,2.8v3.5
+	l-0.2,0.1c-2-1.7-6.4-4.2-15-4.2c-10.1,0-12.6,2.9-12.6,5.7c0,2.5,1.6,3.9,4.8,4.5c4.9,1,11.7,0.4,17.5,1.3c5,0.7,8,2.8,8,6.9
+	c0,5.8-5.4,10.3-17.9,10.3c-9,0-14.3-2.1-16.5-3.5v-3.9l0.2-0.1c3.5,3.1,8.3,5.3,16.5,5.3c10.4,0,14.1-3,14.1-6.8
+	C416,282.4,414.3,280.6,410.7,280z"/>
+<path class="st0" d="M437.5,160.4v1.6h-3v7.9h-1.9V162h-3v-1.6H437.5z M447.7,169.9l-0.3-5.6c0-0.7,0-1.6-0.1-2.6h-0.1
+	c-0.2,0.8-0.5,1.9-0.8,2.8l-1.7,5.3h-2l-1.7-5.4c-0.2-0.7-0.5-1.8-0.7-2.7h-0.1c0,0.9,0,1.8-0.1,2.6l-0.3,5.6H438l0.7-9.5h2.9
+	l1.6,4.6c0.2,0.7,0.4,1.4,0.6,2.4h0.1c0.2-0.8,0.5-1.7,0.6-2.3l1.6-4.7h2.8l0.7,9.5H447.7z"/>
+</svg></div>
+        <div class="credits">&copy; 2013 Miami.</div>
+	</footer>
 </body>
 </html>
