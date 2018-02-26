@@ -11,6 +11,7 @@
 	<!--    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
 	<!--    <link rel="stylesheet" href="css/animate.css">-->
 	<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,7 +19,7 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
-<div class="container">
+<div class="cont">
 	<header id="header" class="d-flex align-content-between">
 	    <div class="header-top d-flex justify-content-between align-items-center wrapper">
         
@@ -87,7 +88,7 @@
 	    <div class="header-bottom">
 	        <nav class="wrapper">
 	            <ul class="d-flex justify-content-between">
-	                <li><a href="#">Home</a></li>                                         
+	                <li><a href="#header">Home</a></li>                                         
 	                <li><a href="#about">About Us</a></li>
 	                <li><a href="#contact">Contacts</a></li>
 	                <li><a href="#gallery">Gallery</a></li>
@@ -159,7 +160,7 @@
             </div>
 	    </div>
 	    <div class="gallery-all">
-	        <a class="btn inline" href="#">View all</a>
+	        <a class="btn inlinebtn" href="#" id="inlinebtn">View all</a>
 	    </div>
 	</section>
 	<section id="consultation" class="consultation">
@@ -221,7 +222,16 @@
                 <h4>Stev Joni</h4>
                 <h5>Founder Lucoil</h5>
                 <p>Nice work, Certificates National Association of Realtors (USA).</p>
-            </div>            <div class="t-item">
+            </div>            
+            <div class="t-item">
+               <div class="img">
+                    <img src="img/person.jpg" alt="">
+               </div>
+                <h4>Stev Joni</h4>
+                <h5>Founder Lucoil</h5>
+                <p>Nice work, Certificates National Association of Realtors (USA).</p>
+            </div>            
+            <div class="t-item">
                <div class="img">
                     <img src="img/person.jpg" alt="">
                </div>
@@ -259,7 +269,7 @@
                 <form action="#">
                     <input type="text" placeholder="Name" class="form-control">
                     <input type="mail" placeholder="Email" class="form-control">
-                    <textarea name="" id="" placeholder="Message"></textarea>
+                    <textarea name="" id="" class="area-control" placeholder="Message"></textarea>
                     <button type="submit" class="btn w100">write to us</button>
                 </form>
             </div>
