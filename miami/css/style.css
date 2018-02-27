@@ -696,15 +696,9 @@ nav a {
 
 }
 
-.gallery-item:last-child img:first-child {
-	width: 24vw;
 
-}
 
-.gallery-item:last-child img:last-child {
-	width: 50.4vw;
 
-}
 
 .gallery-item:nth-child(2) img:first-child {
 	width: 37.2vw;
@@ -713,6 +707,36 @@ nav a {
 
 .gallery-item:nth-child(2) img:last-child {
 	width: 37.2vw;
+
+}
+.gallery-item:nth-child(3) img:first-child {
+	width: 24vw;
+
+}
+
+.gallery-item:nth-child(3) img:last-child {
+	width: 50.4vw;
+
+}
+
+.gallery-item:nth-child(4) img:first-child {
+	width: 37.2vw;
+
+}
+
+.gallery-item:nth-child(4) img:last-child {
+	width: 37.2vw;
+
+}
+
+
+.gallery-item:last-child img:first-child {
+	width: 24vw;
+
+}
+
+.gallery-item:last-child img:last-child {
+	width: 50.4vw;
 
 }
 
