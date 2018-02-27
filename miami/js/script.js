@@ -28,7 +28,6 @@ $(document).ready(function(){
 		e.preventDefault();
 		$('.gallery-item').removeClass('hide');
 		$(this).remove();
-//		return false;
 	});
 	$('.mymodal').hide().removeClass("hide");
 	$('.call').click(function(e){
@@ -37,12 +36,10 @@ $(document).ready(function(){
 	});
 	$('.mymodal, .times').click(function(e){
 		e.preventDefault();
-		if ($(this).hasClass('mymodal-content')){
-				console.log("ok");
-		} else{
+		if ($(e.target).hasClass('mymodal') || $(e.target).hasClass('times')){
 				$('.mymodal').fadeOut(200);
 		}
-		
+		e.stopPropagation();
 	});
 	
 	
