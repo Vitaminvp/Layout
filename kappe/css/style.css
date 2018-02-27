@@ -1,0 +1,447 @@
+﻿@charset utf-8;
+/**********************************************************RESET*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**********************************************************RESET*/
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a,
+a:hover,
+button,
+button:hover {
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+	cursor: pointer;
+}
+
+/**********************************************************FLEX FRAMEWORK*/
+
+.d-flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap
+}
+
+.d-flex__nowrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap
+}
+
+.justify-content-between {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-justify-content: space-between
+}
+
+.justify-content-start {
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start
+}
+
+.justify-content-end {
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end
+}
+
+.justify-content-center {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-justify-content: center
+}
+
+.justify-content-around {
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	-webkit-justify-content: space-around
+}
+
+.flex__auto {
+	-webkit-box-flex: 1;
+	flex: auto;
+	-webkit-flex: auto;
+	-ms-flex: auto
+}
+
+.align-items-start {
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-align-items: flex-start
+}
+
+.align-items-end {
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	-webkit-align-items: flex-end
+}
+
+.align-items-baseline {
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
+	align-items: baseline;
+	-webkit-align-items: baseline
+}
+
+.align-items-stretch {
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	-webkit-align-items: stretch
+}
+
+.align-items-center {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-align-items: center
+}
+
+.align-content-start {
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
+	-webkit-align-content: flex-start
+}
+
+.align-content-end {
+	-ms-flex-line-pack: end;
+	align-content: flex-end;
+	-webkit-align-content: flex-end
+}
+
+.align-content-between {
+	-ms-flex-line-pack: justify;
+	align-content: space-between;
+	-webkit-align-content: space-between
+}
+
+.align-content-center {
+	-ms-flex-line-pack: center;
+	align-content: center;
+	-webkit-align-content: center
+}
+
+.align-content-around {
+	-ms-flex-line-pack: distribute;
+	align-content: space-around;
+	-webkit-align-content: space-around
+}
+
+.align-content-stretch {
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+	-webkit-align-content: stretch
+}
+
+.flex__flex-grow_01 {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	-webkit-flex-grow: 1
+}
+
+.flex__flex-grow_02 {
+	-webkit-box-flex: 2;
+	-ms-flex-positive: 2;
+	flex-grow: 2;
+	-webkit-flex-grow: 2
+}
+
+.flex__flex-grow_03 {
+	-webkit-box-flex: 3;
+	-ms-flex-positive: 3;
+	flex-grow: 3;
+	-webkit-flex-grow: 3
+}
+
+.flex__flex-grow_04 {
+	-webkit-box-flex: 4;
+	-ms-flex-positive: 4;
+	flex-grow: 4;
+	-webkit-flex-grow: 4
+}
+
+.w5 {
+	width: 5%;
+	max-width: 5%
+}
+
+.w10 {
+	width: 10%;
+	max-width: 10%
+}
+
+.w15 {
+	width: 15%;
+	max-width: 15%
+}
+
+.w20 {
+	width: 20%;
+	max-width: 20%
+}
+
+.w25 {
+	width: 25%;
+	max-width: 25%
+}
+
+.w30 {
+	width: 30%;
+	max-width: 30%
+}
+
+.w35 {
+	width: 35%;
+	max-width: 35%
+}
+
+.w40 {
+	width: 40%;
+	max-width: 40%
+}
+
+.w45 {
+	width: 45%;
+	max-width: 45%
+}
+
+.w50 {
+	width: 50%;
+	max-width: 50%
+}
+
+.w55 {
+	width: 55%;
+	max-width: 55%
+}
+
+.w60 {
+	width: 30%;
+	max-width: 60%
+}
+
+.w65 {
+	width: 65%;
+	max-width: 65%
+}
+
+.w70 {
+	width: 70%;
+	max-width: 70%
+}
+
+.w75 {
+	width: 75%;
+	max-width: 75%
+}
+
+.w80 {
+	width: 80%;
+	max-width: 80%
+}
+
+.w85 {
+	width: 85%;
+	max-width: 85%
+}
+
+.w90 {
+	width: 90%;
+	max-width: 90%
+}
+
+.w95 {
+	width: 95%;
+	max-width: 95%
+}
+
+.w100 {
+	width: 100%;
+	max-width: 100%
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.d-flex__nowrap_reverse {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: reverse;
+	-ms-flex-flow: row-reverse nowrap;
+	flex-flow: row-reverse nowrap
+}
+
+/**********************************************************MYSTYLES*/
+
+
+
+
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+@media only screen and (max-device-width: 320px){
+
+}
+	
+	
+	
