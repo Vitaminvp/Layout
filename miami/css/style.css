@@ -619,7 +619,38 @@ header {
 .header-bottom.toTop a {
 	color: #363636;
 }
-
+.btn-menu-wrap{
+    display: none;
+}
+.menu-btn{
+    position: relative;
+/*    display: none;*/
+    width: 8vw;
+    margin: 0 auto;
+}
+.btn-menu-wrap nav{
+    position: absolute;
+    margin-top: 1vh;
+    padding: 2vw 5vw;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 80vw;
+    background-color: rgba(0,0,0, 0.8);
+    display: none;
+}
+.btn-menu-wrap ul li{
+    margin: 1vh;
+}
+.menu-btn span{
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    
+}
+.menu-btn span+span{
+    margin-top: 5px;
+}
 nav a {
 	text-decoration: none;
 	color: #fff;
@@ -949,12 +980,90 @@ footer .credits {
 
 
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
-@media only screen and (max-device-width: 320px),
+
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
-		
+
 }
-	
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+@media only screen and (max-device-width: 320px){
+    body, .about-text p {
+        font-size: 2.3vmax;
+        line-height: 3.3vmax;
+    }
+    .header{
+        padding: 5vh;
+    }
+    .header-top{
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+        height: 100%;
+        padding: 5vh;
+    }
+    .header-top .logo {
+        width: 25vh;
+    }
+    .header-bottom ul{
+        flex-flow: column nowrap;
+        display: none;
+    }
+    .btn-menu-wrap{
+        display: block;
+    }
+    .form-control {
+        font-size: 3.1vw;
+        line-height: 8.1vw;
+        height: 8.1vw;
+    }
+    .btn {
+        font-size: 3.1vw;
+        line-height: 8.1vw;
+    }
+    .about,
+    .c-items{
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        padding: 5vh 0 0;
+
+    }
+    .consultation .h2,
+    .contact .h2 {
+    margin-bottom: 0;
+}
+    .consultation,
+    .about,
+    .c-items{
+    }
+    .about-best,
+    .about-text,
+    .c-gift
+    {
+        width: 100%;
+        padding-bottom: 3vh;
+    }
+    .c-items,
+    .c-form{
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .c-info{
+        padding-bottom: 3vh;
+    }
+    .area-control::placeholder {
+
+	   font-size: 3.1vw;
+       line-height: 8.1vw;
+    }
+    footer .logo {
+        width: 25vh;
+    }
+
+}
 	
 	
 	

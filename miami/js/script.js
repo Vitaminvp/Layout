@@ -5,7 +5,19 @@ $(document).ready(function(){
 //        var moveY=(e.pageY * -1/20);
 //        $(this).css("background-position", moveX + "px " +moveY + "px");
 //      });
-	
+    
+    
+    //Выпадающее меню
+    
+    
+    $('.menu-btn').click(function(){
+        $(this).find('nav').toggle();
+    })
+    
+    
+	// Плавная прокрутка к якорям
+    
+    
 	$('a[href^="#"]').click(function(){
 		let target = $(this).attr("href");
 		$('html, body').animate({
@@ -14,16 +26,23 @@ $(document).ready(function(){
 	});
 	
 	$(window).scroll(function(){
-		let top = $('.header-bottom').offset().top;
-		$(window).scroll(function(){
-			if( $(window).scrollTop() > top) {
-				$('.header-bottom').addClass('toTop');
-			}else{
-				$('.header-bottom').removeClass('toTop');
-			}
-		});
+        
+        if(window.innerWidth > 480){
+            let top = $('.header-bottom').offset().top;
+            $(window).scroll(function(){
+                if( $(window).scrollTop() > top) {
+                    $('.header-bottom').addClass('toTop');
+                }else{
+                    $('.header-bottom').removeClass('toTop');
+                }
+            });
+        }
 	});
-	
+    
+    
+    
+	// Показать сонтент по клику
+    
 	$('.gallery-all button').click(function(e){
 		e.preventDefault();
 		$('.gallery-item').removeClass('hide');
@@ -42,7 +61,9 @@ $(document).ready(function(){
 		e.stopPropagation();
 	});
 	
-	
+	// Слик карусель
+    
+    
 	$('.t-items').slick({
 	  infinite: true,
 	  slidesToShow: 3,
