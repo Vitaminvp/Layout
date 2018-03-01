@@ -565,6 +565,7 @@ strong {
 
 header {
 	background: #0a0e3b url(../img/head-slide1.jpg) center top no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 	color: #fff;
 	width: 100%;
