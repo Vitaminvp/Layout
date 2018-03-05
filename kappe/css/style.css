@@ -430,7 +430,9 @@ button:hover {
 
 /**********************************************************MYSTYLES*/
 
-
+body{
+    font-family: sans-serif;
+}
 
 
 
