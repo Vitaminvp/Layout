@@ -1,0 +1,190 @@
+﻿body {
+	margin: 0;
+	min-width: 1500px;
+	font-family: Verdana, sans-serif;
+}
+
+body > header {
+	background: #efefef;
+	color: white;
+}
+
+h1 {
+	margin: 0;
+	font-weight: 100;
+}
+
+h3 {
+	padding: 0;
+	font-weight: 400;
+	text-align: center;
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+
+main {
+	margin-top: 8px;
+	display: flex;
+}
+
+aside {
+	flex: 1;
+}
+
+section {
+	width: 400px;
+}
+
+input[type="text"] {
+	padding: 5px 10px;
+	margin-top: 5px;
+	width: auto;
+	height: 30px;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+button {
+	border: 0;
+	background: 0;
+	cursor: pointer;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+}
+
+.chevron-top,
+.chevron-bottom {
+	font-size: 20px;
+	color: white;
+	width: 20px;
+	border: 1px solid;
+	
+}
+.close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+.close::before {
+	content: &times;
+	color: black;
+	
+}
+
+
+.check{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-align: center;    
+}
+.check:before{
+    content: '\2713';
+    display: inline-block;
+    color: #363636;
+    font-size: 40px;
+    line-height: 40px;
+    transition: 0.5s;
+}
+
+
+.colors {
+	align-items: center;
+}
+
+.color {
+	box-sizing: border-box;
+	margin-top: 5px;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: 0;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.column {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.lists {
+	display: flex;
+	justify-content: space-around;
+	flex: 15;
+}
+
+.list {
+	align-self: flex-start;
+}
+
+.list > header {
+	background-color: #d4d4d4;
+	border-radius: 5px;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.list-body {
+	height: 100%;
+}
+
+.kanban-card {
+	position: relative;
+	background-color: #2196f3;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px;
+	margin-top: 5px;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.kanban-card > button {
+	align-self: flex-start;
+}
+
+.kanban-card:hover {
+	box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25), 0 5px 7px rgba(0, 0, 0, 0.22)
+}
+
+#red {
+	background: #f44336;
+	/* white text */
+}
+
+#blue {
+	background: #2196f3;
+	/* black text */
+}
+
+#green {
+	background: #4caf50;
+	/* black text */
+}
+
+#yellow {
+	background: #ffeb3b;
+	/* black text */
+}
