@@ -2,91 +2,90 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Kanban</title>
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="/resources/demos/style.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!--	<script src="js/script.js"></script>-->
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kanban</title>
+    <!--	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+    <!--	<link rel="stylesheet" href="/resources/demos/style.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--	<script src="js/script.js"></script>-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
 
+    <header>
+        <h1 class="title">Kanban</h1>
+    </header>
 
+    <main>
 
-	<header>
-		<h1>https://codepen.io/sheltermelter/pen/qpvqBV?page=1&</h1>
-	</header>
-
-	<main>
-
-		<aside class="column colors">
-			<button id="red" class="color" value="#F44336">
+        <aside class="column colors">
+            <button id="red" class="color" value="#F44336">
                 <span class=""></span>
             </button>
-			<button id="blue" class="color" value="#2196F3">
+            <button id="blue" class="color" value="#2196F3">
                 <span class="check"></span>
             </button>
-			<button id="green" class="color" value="#4CAF50">
+            <button id="green" class="color" value="#4CAF50">
                 <span class=""></span>
             </button>
-			<button id="yellow" class="color" value="#FFEB3B">
+            <button id="yellow" class="color" value="#FFEB3B">
                 <span class=""></span>
             </button>
-		</aside>
+        </aside>
 
-		<div class="lists">
+        <div class="lists">
 
-			<section class="column list">
-				<header>
-					<h3>To do</h3>
-					<button>
+            <section class="column list">
+                <header>
+                    <h3>To do</h3>
+                    <button>
                         <span class="chevron-top"></span>
                     </button>
-				</header>
+                </header>
 
-				<input type="text" placeholder="Add new card">
+                <input type="text" placeholder="Add new card">
 
-				<div id="sortable1" class="list-body">
-					<div class="kanban-card">
-						<p>Placeholder text ( Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, non amet ipsam dignissimos cum tempore ab qui veritatis corporis iure sit ad quia quod vel dolor ex nesciunt, quidem magnam! )</p>
-						<button>
-                            <span class="close">&times</span>
+                <div id="sortable1" class="list-body">
+                    <div class="kanban-card">
+                       <div>
+                        <p>27.03.2018 11:20</p>
+                        <button>
+                            <span class="close">&times;</span>
                         </button>
-					</div>
-				</div>
-			</section>
+                       </div>
+                        <p>Placeholder text ( Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, non amet ipsam dignissimos cum tempore ab qui veritatis corporis iure sit ad quia quod vel dolor ex nesciunt, quidem magnam! )</p>
+                    </div>
+                </div>
+            </section>
 
-			<section class="column list">
-				<header>
-					<h3>Doing</h3>
-				</header>
-				<div id="sortable2" class="list-body"></div>
-			</section>
+            <section class="column list">
+                <header>
+                    <h3>Doing</h3>
+                </header>
+                <div id="sortable2" class="list-body"></div>
+            </section>
 
-			<section class="column list">
-				<header>
-					<h3>Done</h3>
-				</header>
-				<div id="sortable3" class="list-body"></div>
-			</section>
+            <section class="column list">
+                <header>
+                    <h3>Done</h3>
+                </header>
+                <div id="sortable3" class="list-body"></div>
+            </section>
 
-		</div>
+        </div>
 
-	</main>
+    </main>
 
-	<footer>
-		
-	</footer>
-
-
+    <footer>
+       
+    </footer>
 
 
 
-	<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
