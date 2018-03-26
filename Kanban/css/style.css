@@ -24,14 +24,15 @@ h3 {
 main {
     margin-top: 8px;
     display: flex;
+    justify-content: center;
 }
 
 aside {
-    flex: 1;
+/*    flex: 1;*/
 }
 
 section {
-    width: 400px;
+    width: 300px;
 }
 .input{
 	position: relative;
@@ -40,11 +41,10 @@ section {
 	
 }
 input[type="text"] {
-    width: auto;
     padding: 10px 10px;
     border-radius: 10px;
     color: darkgrey;
-	width: 100%;
+	width: 92%;
 	outline: none;
 }
 
@@ -75,7 +75,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
     color: white;
     position: absolute;
     bottom: 0;
@@ -83,7 +82,9 @@ footer {
     height: 30px;
 }
 
-
+.selected{
+    transform: scale(1.2);
+}
 
 
 .check {
@@ -95,43 +96,77 @@ footer {
     border: none;
     text-align: center;
     outline: none;
+    margin-left: -4px;
+    margin-top: 5px;
 }
 
 .check:before {
     content: '\2713';
     display: inline-block;
     color: #363636;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 30px;
     transition: 0.5s;
 }
 
 .colors {
     align-items: center;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
 }
 
 .color {
     box-sizing: border-box;
     margin-top: 5px;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     border: 0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-
+ul.pickers{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+ul.pickers li{
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 0;
+    margin-left: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 1px 2px rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
 
 .lists {
     display: flex;
     justify-content: space-around;
-    flex: 15;
+/*    flex: 15;*/
 }
 
 .list {
+    min-height: 200px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-self: flex-start;
+    margin-left: 20px;
+}
+.list-body {
+    border: 1px solid ;
+    min-height: 200px;
+    height: 100%;
 }
 
 .list > header {
@@ -194,6 +229,7 @@ footer {
 }
 
 .list-body {
+    min-height: 300px
     height: 100%;
 }
 
@@ -205,12 +241,21 @@ footer {
     justify-content: space-between;
     padding: 15px 10px;
     margin-top: 10px;
+    margin-bottom: 20px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    cursor: pointer;
+/*    cursor: pointer;*/
     border-radius: 10px
 }
-
+textarea.text{
+/*    overscroll-behavior-y: initial;*/
+    max-width: 100%;
+    min-height: fit-content;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    z-index: 1;
+}
 .kanban-card > span {}
 
 .kanban-card > div {
@@ -251,22 +296,22 @@ footer {
     z-index: 1;
 }
 
-#red {
+.red {
     background: #f44336;
     /* white text */
 }
 
-#blue {
+.blue {
     background: #2196f3;
     /* black text */
 }
 
-#green {
+.green {
     background: #4caf50;
     /* black text */
 }
 
-#yellow {
+.yellow {
     background: #ffeb3b;
     /* black text */
 }

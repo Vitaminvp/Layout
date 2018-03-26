@@ -893,6 +893,10 @@ input {
 	border-radius: 50%;
 }
 
+.t-item p {
+	padding: 5%;
+}
+
 .t-item .img::after {
 	position: absolute;
 	content: "";
@@ -979,9 +983,34 @@ footer .credits {
 	transform: translateX(-50%);
 }
 
+#header{
+    animation: slideshow 15s linear infinite 0s;
+    backface-visibility: hidden;
+}
 
 
-
+@keyframes slideshow{
+    0%{
+        background-image: url(../img/head-slide1.jpg);
+        animation-timing-function: ease-in-out;
+    }
+    40%{
+        background-image: url(../img/head-slide1.jpg);
+        animation-timing-function: ease-in-out;
+    }
+    50%{
+        background-image: url(../img/head-slide2.jpg);
+        animation-timing-function: ease-in-out;
+    }
+    90%{
+        background-image: url(../img/head-slide2.jpg);
+        animation-timing-function: ease-in-out;
+    }
+    100%{
+        background-image: url(../img/head-slide1.jpg);
+        animation-timing-function: ease-in-out;
+    }
+}
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
 
