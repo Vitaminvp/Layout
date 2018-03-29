@@ -1,6 +1,15 @@
-﻿input.active{
+﻿.active{
 	background-color: green;
 }
-
+.bulb{
+	background-color: gray;
+	display: inline-block;
+	cursor: pointer;
+	padding: 10px 20px;
+	margin-left: 10px;
+}
+.bulb:hover{
+	background-color: #adadad;
+}
 .tab1 {  display: block;}
 .tab2 {  display: none;}
