@@ -1,6 +1,95 @@
-﻿input.active{
-	background-color: green;
+﻿.active{
+
 }
 
-.tab1 {  display: block;}
-.tab2 {  display: none;}
+input {
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+}
+input:hover{
+    opacity: 0.7;
+}
+
+input:active{
+    opacity: 1;
+}
+.wrapper{
+    display: flex;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 2px;
+    
+}
+.wrap:last-child{
+    justify-content: flex-end;
+}
+.wrap.active input{
+    background-color: green;
+}
+.wrap .fa-lightbulb{
+    font-size: 35px;
+    margin-bottom: 5px;
+    color: gray;
+}
+.wrap.active .fa-lightbulb{
+    color: yellow;
+}
+.wrap:nth-child(2n+1).active .fa-lightbulb{
+    color: #6464ff;
+}
+#all{
+    align-self: flex-end;
+}
+
+form{
+  margin: 50px;
+}
+input.switch:empty{
+  margin-left: -999px;
+  /*border: 1px solid black;*/
+}
+input.switch:empty ~ label{
+  position: relative;
+  float: left;
+  line-height: 30px;
+  cursor: pointer;
+  width: 60px;
+  text-indent: 65px;
+}
+input.switch:empty ~ label::before{
+  position: absolute;
+  display: block;
+  background-color: green;
+  content: '';
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  border-radius: 15px;
+  box-shadow: inset 0px 2px 12px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  transition: all 200ms ease-in;
+}
+input.switch:empty ~ label::after{
+  position: absolute;
+  display: block;
+  content: '';
+  top:0;
+  bottom: 0;
+  background-color: white;
+  width: 30px;
+  border-radius: 50%;
+    box-shadow: inset 0px -1px 2px rgba(0,0,0,0.3);
+    transition: all 150ms ease-in;
+}
+input.switch:checked ~ label::after{
+  margin-left: 31px;
+}
+input.switch:checked ~ label::before{
+  background-color: red;
+}
