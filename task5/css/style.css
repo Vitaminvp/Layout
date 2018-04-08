@@ -1,6 +1,4 @@
-﻿.active{
 
-}
 
 input {
     border: none;
@@ -93,3 +91,20 @@ input.switch:checked ~ label::after{
 input.switch:checked ~ label::before{
   background-color: red;
 }
+
+.bulb{
+	background-color: gray;
+	display: inline-block;
+	cursor: pointer;
+	padding: 10px 20px;
+	margin-left: 10px;
+}
+/*
+
+*/
+.bulb:hover{
+	opacity: 0.8;
+}
+.tab1 {  display: block;}
+.tab2 {  display: none;}
+

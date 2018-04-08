@@ -33,6 +33,23 @@
 //for (var i = 0; i < myForm.languages.length; i++) {
 //    myForm.languages[i].addEventListener("click", onclick);
 //}
+//
+//var all = document.getElementById("all");
+//
+//
+//
+//function setBg(el) {
+//	alert("ok");
+//    el.classList.toggle("active");
+//
+//}
+//
+//var btn = document.getElementsByClassName('bulb');
+//
+//for (var i=0; i<btn.length; i++) {
+//  btn[i].addEventListener("click", setBg);
+//  };
+
 
 //var all = document.getElementById("all");
 //
@@ -84,6 +101,37 @@ window.onload = function(){
         }
     }
 }
+
+
+
+//
+//var el = document.getElementsByClassName('bulb');
+//   console.log(el);
+//for(let i=0; i < el.length; i++) {
+//   el[i].addEventListener("click", showSub);
+//}
+//
+//function showSub(e) {
+//      this.classList.toggle('active');
+//}
+
+var el = document.getElementsByClassName('bulb');
+console.log(el);
+console.log(el.length);
+
+for(var i=0; i<el.length; i++) {
+   el[i].addEventListener("click", showSub, false);
+	
+}
+function showSub(e) {
+	  
+      e.target.classList.add('active');
+
+}
+
+
+
+
 
 
 
