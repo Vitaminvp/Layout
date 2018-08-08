@@ -48,11 +48,21 @@ $(document).ready(function(){
 		$('.gallery-item').removeClass('hide');
 		$(this).remove();
 	});
+
+
+
+
+
+
 	$('.mymodal').hide().removeClass("hide");
 	$('.call').click(function(e){
 		e.preventDefault();
 		$('.mymodal').fadeIn(200);
 	});
+
+
+
+
 	$('.mymodal, .times').click(function(e){
 		e.preventDefault();
 		if ($(e.target).hasClass('mymodal') || $(e.target).hasClass('times')){

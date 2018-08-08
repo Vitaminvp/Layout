@@ -377,7 +377,10 @@ if (flag_process && !bp.prop("shown") && isVisible(bp)) {
 
 
 
-
+$(".advantages").fadeOut();
+$(window).on("load", function () {
+            $(".advantages").delay(1000).fadeIn("slow")
+  });
 </script>
 </body>
 </html>

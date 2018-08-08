@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/bootstrap-grid.css">
+<script src="js/jquery-1.11.0.min.js"></script>
+
+<body>
+
+
+
+
+    <div style="background-color: #ecedef; padding: 20px; ">
+        <h3 class="text-center">Підбір тарифу:</h3>
+        <h5>Шаг <span id="progressBarNum">1</span> из 5</h5>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width: 1%" id="progressBar">
+            </div>
+        </div>
+        <form id="form_filters">
+            <div class="col-md-12 container filter_ask" id="block_filter_1">
+                <p>
+                    <b class="text_blue">1. Виберіть назву конфігурації:</b>
+                </p>
+                <div class="col-md-6 ">
+                    <div>
+                        <label name="option_1"> <input type="radio" name="config_name" id="optionsRadios1_1" value="1" style="float: none; height: 25px;">
+					Бухгалтерія 8 </label>
+                    </div>
+                    <div>
+                        <label name="option_1"> <input type="radio" name="config_name" id="optionsRadios1_2" value="1" style="float: none; height: 25px;">
+					Управління торговим підприємством 8 </label>
+                    </div>
+                    <div>
+                        <label name="option_1"> <input type="radio" name="config_name" id="optionsRadios1_3" value="1" style="float: none; height: 25px;">
+					Зарплата і управління персоналом 8 (в т.ч. для бюджетних організацій) </label>
+                    </div>
+                    <div>
+                        <label name="option_1"> <input type="radio" name="config_name" id="optionsRadios1_4" value="2" style="float: none; height: 25px;">
+					Управління торгівлею 8 </label>
+                    </div>
+                    <div>
+                        <label name="option_1"> <input type="radio" name="config_name" id="optionsRadios1_5" value="2" style="float: none; height: 25px;">
+					Управління невеликою фірмою </label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <label name="option_1"> <input type="radio" name="config_name" id="optionsRadios1_6" value="3" style="float: none; height: 25px;">
+					Управління виробничим підприємством 8 </label>
+                    </div>
+                    <div>
+                        <label name="option_1"> <input type="radio" name="config_name" id="optionsRadios1_7" value="3" style="float: none; height: 25px;">
+					CRM ПРОФ </label>
+                    </div>
+                    <div>
+                        <label name="option_1"> <input type="radio" name="config_name" id="optionsRadios1_8" value="2" style="float: none; height: 25px;">
+					Галузева конфігурація (Бухгалтерія сільськогосподарського підприємства; Підрядник будівництва) </label>
+                    </div>
+                    <div>
+                        <label name="option_1"> <input type="radio" name="config_name" id="optionsRadios1_9" value="3" style="float: none; height: 25px;">
+					Спеціалізоване рішення (рішення "спільно з 1С") </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 hide filter_ask" id="block_filter_2">
+                <p>
+                    <b class="text_blue">2. Чи вносилися зміни в функціонал програми (допрацьовували)? </b>
+                </p>
+                <div>
+                    <label name="option_2"> <input type="radio" name="changed" id="optionsRadios2_1" value="2" style="float: none; height: 25px;">
+				так </label>
+                </div>
+                <div>
+                    <label name="option_2"> <input type="radio" name="changed" id="optionsRadios2_2" value="1" style="float: none; height: 25px;">
+				ні </label>
+                </div>
+            </div>
+            <div class="col-md-12 hide filter_ask" id="block_filter_3">
+                <p>
+                    <b class="text_blue">3. Кількість інформаційних баз: </b>
+                </p>
+                <div>
+                    <label name="option_3"> <input type="radio" name="information_base" id="optionsRadios3_1" value="1" style="float: none; height: 25px;">
+				1 ІБ</label>
+                </div>
+                <div>
+                    <label name="option_3"> <input type="radio" name="information_base" id="optionsRadios3_2" value="2" style="float: none; height: 25px;">
+				до 3 ІБ</label>
+                </div>
+                <div>
+                    <label name="option_3"> <input type="radio" name="information_base" id="optionsRadios3_3" value="3" style="float: none; height: 25px;">
+				більше 3 ІБ</label>
+                </div>
+            </div>
+            <div class="col-md-12 hide filter_ask" id="block_filter_4">
+                <p>
+                    <b class="text_blue">4. Кількість користувачів:</b>
+                </p>
+                <div>
+                    <label name="option_4"> <input type="radio" name="count_user" id="optionsRadios4_1" value="1" style="float: none; height: 25px;">
+				1 користувач</label>
+                </div>
+                <div>
+                    <label name="option_4"> <input type="radio" name="count_user" id="optionsRadios4_2" value="2" style="float: none; height: 25px;">
+				до 6 </label>
+                </div>
+                <div>
+                    <label name="option_4"> <input type="radio" name="count_user" id="optionsRadios4_3" value="3" style="float: none; height: 25px;">
+				більше 6 </label>
+                </div>
+            </div>
+            <div class="col-md-12 hide filter_ask" id="block_filter_5">
+                <p>
+                    <b class="text_blue">5. На якому етапі впровадження автоматизована система 1С?</b>
+                </p>
+                <div>
+                    <label name="option_5"> <input type="radio" name="using_program" id="optionsRadios5_1" value="1" style="float: none; height: 25px;">
+				Програма використовується, доопрацювання функціоналу не потрібні; </label>
+                </div>
+                <div>
+                    <label name="option_5"> <input type="radio" name="using_program" id="optionsRadios5_2" value="2" style="float: none; height: 25px;">
+				Програма використовується, отримуємо звітність з системи, потрібне вдосконалення функціоналу; </label>
+                </div>
+                <div>
+                    <label name="option_5"> <input type="radio" name="using_program" id="optionsRadios5_3" value="2" style="float: none; height: 25px;">
+				Програма не використовується, потрібно: навчання та / або удосконалення функціоналу, доопрацювання системи, розробка методології ведення обліку в системі </label>
+                </div>
+            </div>
+            <p>
+                <span class="btn btn-default hide" id="prevQuestion">Попереднє питання</span> <input class="btn btn-default hide" type="button" value="Почати заново" id="reset_filters" style="float: right;">
+            </p>
+        </form>
+    </div>
+    <br>
+    <h4 id="fit_tariffs" class="hide text-center text_blue">Вам підходять такі тарифи:</h4>
+    <br>
+    <div style="text-align: left;">
+        <b style="color: #0054a5; font-family: Arial, sans-serif, Tahoma, Verdana, Helvetica; font-size: x-large; line-height: 17px; text-align: -webkit-center; background-color: #ffffff;"><br>
+ </b>
+    </div>
+    <p style="text-align: right;">
+    </p>
+    <table border="1" cellpadding="3" cellspacing="1" class="table-pad30 border-tr table-stroke" id="table_filter">
+        <tbody>
+            <tr class="bg-corporate-blue vert-al-middle">
+                <td colspan="1">
+                    &nbsp;
+                </td>
+                <td colspan="1">
+                    <p class="text-white text-center mt18">
+                        <span class="text-big-table text-uppercase">проф </span><br>
+                        <span class="fs-12">538 грн/ міс.*</span>
+                    </p>
+                    
+                </td>
+                <td colspan="1">
+                    <p class="text-white text-center mt18">
+                        <span class="text-big-table text-uppercase">Оптима</span><br>
+                        <span class="fs-12">1650 грн/ міс.*</span> 
+                    </p>
+                </td>
+                <td colspan="1">
+                    <p class="text-white text-center mt18">
+                        <span class="text-big-table text-uppercase">Преміум</span><br>
+                        <span class="fs-12">3030 грн/ міс.*</span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Лінія Підтримки СОФТКОМ </b>
+                </td>
+                <td>
+                    <div style="text-align: center;">
+                        40 хвилин/день
+                    </div>
+                    <div style="text-align: center;">
+                        с 9 до 18
+                    </div>
+                </td>
+                <td style="text-align: center;">
+                    С 9 до 18
+                </td>
+                <td style="text-align: center;">
+                    24/7
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Консультації з віддаленим підключенням</b>
+                </td>
+                <td style="text-align: center;">
+                    Ні
+                </td>
+                <td style="text-align: center;">
+                    Так
+                </td>
+                <td style="text-align: center;">
+                    Так
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Роботи спеціаліста 1С </b>
+                </td>
+                <td style="text-align: center;">
+                    До 1 година/міс.
+                </td>
+                <td style="text-align: center;">
+                    До 3 годин/міс.
+                </td>
+                <td style="text-align: center;">
+                    До 6 годин/міс.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Установка оновлень 1С</b>
+                </td>
+                <td style="text-align: center;">
+                    Недопрацьованої 1С
+                </td>
+                <td style="text-align: center;">
+                    Незначно допрацьованої 1С
+                </td>
+                <td style="text-align: center;">
+                    Допрацьованої 1С
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Доопрацювання 1С </b>
+                </td>
+                <td style="text-align: center;">
+                    Не передбачено
+                </td>
+                <td style="text-align: center;">
+                    Друковані форми, звіти
+                </td>
+                <td style="text-align: center;">
+                    Доопрацювання функціоналу
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Індивідуальні консультації щодо ведення обліку в 1с</b>
+                </td>
+                <td style="text-align: center;">
+                    Не передбачено
+                </td>
+                <td style="text-align: center;">
+                    У межах годин робіт спеціаліста
+                </td>
+                <td style="text-align: center;">
+                    Персональний консультант
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table cellpadding="1" cellspacing="1">
+        <tbody>
+            <tr>
+                <td>
+                    
+                </td>
+                <td>
+                    – вигідна пропозиція тарифу.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            var mas_answ = [];
+            $('.filter_ask label').click(function() {
+                var position_table = +$(this).find('input').val();
+                mas_answ.push(position_table);
+                var block_num = +$(this).attr('name').split('_')[1];
+                $('#block_filter_' + block_num).addClass('hide');
+                block_num_new = +block_num + 1;
+                $('#block_filter_' + block_num_new).removeClass('hide');
+                showProgressBar(block_num);
+                $('#prevQuestion').removeClass('hide');
+                if (block_num_new == 6) {
+                    showTableFilters(mas_answ);
+                    $('#')
+                }
+
+            });
+
+            function showTableFilters(mas_answ) {
+                $('#fit_tariffs').removeClass('hide');
+                var height = $('#fit_tariffs').offset().top;
+                height -= 70;
+                // скроллим страницу на значение равное позиции элемента
+                $("html body").animate({
+                    scrollTop: height
+                }, 700);
+
+                // fill_table
+
+                var answ_position = getMaxOfArray(mas_answ);
+                if (answ_position == 3) {
+                    for (var i = 2; i < 4; i++) {
+                        $('#table_filter tr td:nth-child(' + i + ')').addClass('opacity_03');
+                    }
+                } else if (answ_position == 2) {
+                    $('#table_filter tr td:nth-child(2)').addClass('opacity_03');
+                } else if (answ_position == 1) {
+                    $('#table_filter tr td:nth-child(4)').addClass('opacity_03');
+                }
+
+            }
+
+            function showProgressBar(block_num) {
+                progress = +block_num * 20 + '%';
+                $('#progressBar').css('width', progress);
+                var num = block_num;
+                if (num < 5) {
+                    num = +block_num + 1;
+                } else {
+                    $('#reset_filters').removeClass('hide');
+                }
+                $('#progressBarNum').text(num);
+            }
+
+            $('#prevQuestion').click(function() {
+                var block_num = +$('#progressBarNum').text();
+                if ($('#block_filter_5').hasClass('hide') && block_num == 5) {
+                    var block_num_prev = +block_num;
+                } else {
+                    var block_num_prev = +block_num - 1;
+                }
+                progress = +block_num_prev * 20 + '%';
+                $('#progressBar').css('width', progress);
+                $('#block_filter_' + block_num).addClass('hide');
+                $('#block_filter_' + block_num_prev).removeClass('hide');
+                $('#progressBarNum').text(block_num_prev);
+                if (block_num_prev == 1) {
+                    $('#prevQuestion').addClass('hide');
+                };
+            });
+
+            function getMaxOfArray(numArray) {
+                return Math.max.apply(null, numArray);
+            };
+
+            $('#reset_filters').click(function() {
+                resetFilters();
+            });
+
+            function resetFilters() {
+                document.getElementById("form_filters").reset();
+                $('#reset_filters').addClass('hide');
+                $('#prevQuestion').addClass('hide');
+                $('.filter_ask').addClass('hide');
+                $('#block_filter_1').removeClass('hide');
+                mas_answ = [];
+                $('#progressBar').css('width', '1%');
+                $('#progressBarNum').text('1');
+                $('#fit_tariffs').addClass('hide');
+                $('#table_filter').find('td.opacity_03').removeClass('opacity_03');
+            };
+        });
+    </script>
+</body>
+</html>
