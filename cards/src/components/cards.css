@@ -1,0 +1,7 @@
+.cards__box {
+  display: flex;
+  justify-content: space-around;
+}
+.cards__box_img{
+    background-color: lightgrey;
+}
