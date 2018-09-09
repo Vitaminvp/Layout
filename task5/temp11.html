@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+    
+    
+    	.left   {float:left; }
+	.right {	float:right;}
+	.clear {	clear:both;	}
+	
+	.center {margin:0 auto;}
+	
+	.tRight   {text-align:right; }
+	.tCenter {text-align:center;}
+
+	.table {	display:table;	width:100%;	}
+		.cell {display: table-cell;}
+		
+	.tr {
+		display:table-row
+	}
+	.td {
+		display:table-cell;
+		box-sizing:border-box;
+		vertical-align:top;
+	}
+	
+	.vTop {vertical-align: top;}
+	
+	.in_block {display:inline-block;}
+	.black {color:#000000;}
+	.red {color:#d0112b;	}
+	.f_12 {font-size:12px;}
+	.f_13 {font-size:13px;}
+	.f_14 {font-size:14px;}
+	.f_16 {font-size:16px;}
+	.f_17 {font-size:17px;}
+	.f_18 {font-size:18px;}
+	.f_20 {font-size:20px;}
+	.f_22 {font-size:22px;}
+	.f_24 {font-size:24px;}
+	.f_30 {font-size:30px;}
+	.f_48 {font-size:48px;}
+	.f_42 {font-size:42px;}
+	
+	.tUpper {text-transform: uppercase;}
+	
+	.mb_5 {margin-bottom:5px;}
+	.mb_10 {	margin-bottom:10px;}
+	.mt_10 {	margin-top:10px;}
+	.mb_15 {	margin-bottom:15px;}
+	.mb_20 {	margin-bottom:20px;}
+	.mb_25 {	margin-bottom:25px;}
+	.mb_30 {	margin-bottom:30px;}
+	.mb_40 {	margin-bottom:40px;}
+	.mb_50 {	margin-bottom:50px;}
+	.mb_60 {	margin-bottom:60px;}
+	.mb_70 {	margin-bottom:70px;}
+	.mb_80 {	margin-bottom:80px;}
+	
+	.relative {position: relative;}
+	.rel {position:relative;	z-index:0;}
+	
+	.bg_beige {
+		background:#d2c4b7 url("/_site/_pic/bg_beige.jpg") no-repeat top center;
+	}
+	.bg_silver {
+		background-color:#f6f6f4;	
+	}
+	.bg_gray {
+		background-color:#756e66;
+		color:#ffffff;
+	}
+	.limit {
+		width:1000px;
+		margin:0 auto;
+	}
+	.half {width:50%;}
+
+	.vMid {vertical-align: middle;}
+
+	.w13xp {
+		width: 13px;
+	}
+	
+	.form-group {margin-bottom: 15px;}
+	
+	/* Popup block */
+	
+	.formPopup {
+		background: none repeat scroll 0 0 #fff;
+		border-radius: 10px;
+	}
+	
+	.actionForm  {
+		clear: both;
+	}
+	
+	.actionForm .form-control {
+		width: 100%;
+		padding: 5px 14px;
+		border: 2px solid #ECECEC;
+		border-radius: 4px;
+		font-family: Open Sans;
+		background: #fff;
+		color: #777;
+		font-size: 12px;
+	}
+	
+		.actionForm .actionForm__xrmSubmit {
+			background: #2B9AF3 none repeat scroll 0 0;
+			border: medium none;
+			border-radius: 2px;
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 2px;
+			color: #fff;
+			cursor: pointer;
+			margin-bottom: 10px;
+		    padding: 1ex 1.5rem;
+			position: relative;
+			transition: background-color 300ms ease-out 0s;
+			font-size: 20px;
+			height: auto;
+			line-height: 1;
+			font-family: Open Sans;
+		}
+			.actionForm .actionForm__xrmSubmit:hover {
+				background: #0c80d9 none repeat scroll 0 0;
+			}
+			
+		.safariSelect {line-height: 30px;}
+		
+		.form-control:focus {
+			border-color: #999999;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 5px rgba(153, 153, 153, 0.6);
+			outline: 0 none;
+		}
+		.form-control::-moz-placeholder {
+			color: inherit;
+			opacity: 0.80;
+		}
+		.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+			background-color: #eeeeee;
+			cursor: not-allowed;
+			opacity: 1;
+		}
+		textarea.form-control {
+			height: auto;
+		}
+			.validMark_false {
+				border-color: #ac2925!important;
+				background: url(../_img/validatorFalse.png) 98% center no-repeat rgba(255, 255, 255, 0.9) !important;
+			}
+
+			.validMark_true {
+				border-color: #4CAE4C!important;
+				background: url(../_img/validatorTrue.png) 98% center no-repeat rgba(255, 255, 255, 0.9) !important;
+			}
+
+			
+			.popupSelect {
+				padding: 5px;
+				width: 100%;
+				cursor: pointer;
+				border: 1px solid #c2c2c2;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				font-family: open_sanslight;
+			}
+				.popupSelect:focus {
+					border-color: #999999;
+					box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 5px rgba(153, 153, 153, 0.6);
+					outline: 0 none;
+				}
+				
+		.formPopup-textField {
+			font-size: 12px;
+			margin: 0 0 3px;
+			vertical-align: middle;
+			text-align: right;
+		}
+			.textLayout {
+				cursor: pointer;
+				display: block;
+				line-height: 2;
+			}
+			
+		.formPopup-submit {
+			-moz-user-select: none;
+			background: none repeat scroll 0 0 rgb(149, 165, 166);
+			border: none;
+			border-radius: 4px;
+			box-shadow: none;
+			color: #ffffff;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 14px;
+			line-height: 1.42857;
+			margin-top: 10px;
+			min-width: 90px;
+			opacity: 1;
+			outline-color: #f9f9f9;
+			padding: 6px 12px;
+			text-align: center;
+			text-decoration: none;
+			text-shadow: 0 0 0 transparent, -1px -1px 0 transparent, 1px -1px 0 transparent, -1px 1px 0 transparent, 1px 1px 0 transparent;
+			vertical-align: middle;
+			white-space: nowrap;
+		}
+		
+		.phoneBlock {
+			white-space: nowrap;
+		}
+			.phoneBlockPlus {
+				width: 14px;
+				padding: 0 3px;
+				vertical-align: top;
+			}
+	
+
+	.centerCell {
+		width: 180px;
+		min-width: 35px;
+	}
+	
+	#messageBlock {
+		color:#d02711;
+		font-size: 12px;
+	}
+
+	#GetDemoPanel {
+		
+	}
+	
+	.messageSuccess {
+		margin: 44px 0;
+		color: #005113;
+	}
+	.messageFail {
+		margin: 44px 0;
+		color: #5e0000;
+	}
+	/* Popup block END*/
+	
+	.col-sm-3 {
+		width: 25%;
+	}	
+	.col-sm-9 {
+		width: 75%;
+		position: relative;
+	}
+	
+	.form-horizontal .control-label {
+		margin-bottom: 0;
+		padding-top: 7px;
+		text-align: right;
+	}
+	
+.xrmFormLoading {
+    display: block;
+    left: 100%;
+    margin: 0 10px;
+    position: absolute;
+    right: 0;
+    top: -16px;
+}
+
+.checkboxesBlock {
+	padding: 0 24px 0 6px;
+	width: auto;
+	margin-top: 5px;
+	display: table;
+}
+
+.xrmProductCheckbox {
+	margin-right: 5px; 
+	vertical-align: middle;
+}
+
+.acceptAgreement {
+    margin: 0 8px 3px 2px;
+    vertical-align: middle;
+}
+
+#checkEmailButtons #enterBlockMessage #enterLinkMessage, #checkEmailButtons #buyBlockMessage #buyLinkMessage {
+	font-size: 16px;
+}
+
+#checkEmailButtons #enterBlockMessage #remindPasswordLinkMessage {
+	font-size: 13px;
+}
+.half {
+	width:50%;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+<body>
+    <form action="#">
+                                            <p class="form-group">
+                                                <input value="" class="form-control validMark_true" maxlength="128" placeholder="Iм'я" type="text" id="xrmFirstName" name="firstName"  required>
+                                            </p>
+
+                                            <p class="form-group">
+                                                <input value="" class="form-control validMark_true" maxlength="128" placeholder="Прізвище" type="text" required>
+                                            </p>
+
+                                            <p class="form-group">
+                                                <input value="" class="form-control validMark_false" maxlength="512" placeholder="Електронна пошта" type="email" id="xrmEmail" name="email" data-toggle="tooltip" data-placement="top" data-trigger="focus blur" data-original-title="обов'язкове поле" aria-describedby="tooltip132294">
+         
+
+                                            <p class="form-group">
+                                                <input value="" class="form-control validMark_false" maxlength="13" placeholder="Телефон міський або мобільний +380..." type="tel" id="xrmPhone" name="phone" >
+                                            </p>
+
+                                            <p class="form-group">
+                                                <input value="" class="form-control validMark_true" maxlength="2048" placeholder="Компанія" type="text" id="xrmCompanyName" name="companyName" data-original-title="" title="">
+                                            </p>
+
+
+
+                                            <div class="form-group tCenter">
+                                                <input type="checkbox" id="personsData" class="acceptAgreement" name="" checked="checked" data-original-title="" title=""><span class="stateHidden">Я ознайомлений та погоджуюсь з <a target="blank" href="http://support1.ligazakon.ua/politika-konfidencijnosti-ta-obrobki-personalnix-danix">Політикою конфіденційності та обробки персональних даних</a></span>
+                                            </div>
+
+
+
+
+                                            <p class="form-group tCenter">
+                                                <span class="relative"><input class="actionForm__xrmSubmit" type="submit" id="send" value="Отримати" onclick=""><img class="xrmFormLoading" style="visibility: hidden;" src="./System test of Verdictum _ Платформа LIGA_ZAKON_files/ajax-loader.gif" alt="Зачекайте виконується запит до сервера..."></span>
+                                            </p>
+
+
+                                            <!-- <input id="sendForm" type="submit" class="user_vote esputnikLink" data-nonce="' . $nonce . '" data-email="' . $email . '" value="Ok"/> -->
+                                        </form>
+
+<div class="iblock-vote">
+		<script type="text/javascript">
+			//<![CDATA[
+			if(!window.voteScript) window.voteScript = {
+				trace_vote: function(div, flag) {
+					var my_div;
+					var r = div.id.match(/^vote_(\d+)_(\d+)$/);
+					for(var i = r[2]; i >= 0; i--) {
+						my_div = document.getElementById('vote_'+r[1]+'_'+i);
+						if(my_div) {
+							if(flag) {
+								if(!my_div.saved_class)
+									my_div.saved_className = my_div.className;
+								if(my_div.className!='star-active star-over')
+									my_div.className = 'star-active star-over';
+							} else {
+								if(my_div.saved_className && my_div.className != my_div.saved_className)
+									my_div.className = my_div.saved_className;
+							}
+						}
+					}
+					i = r[2]+1;
+					while(my_div = document.getElementById('vote_'+r[1]+'_'+i)) {
+						if(my_div.saved_className && my_div.className != my_div.saved_className)
+							my_div.className = my_div.saved_className;
+						i++;
+					}
+				},
+				do_vote: function(div, parent_id, arParams) {
+					var r = div.id.match(/^vote_(\d+)_(\d+)$/);
+					var vote_id = r[1];
+					var vote_value = r[2];
+					function __handler(data) {
+						var obContainer = document.getElementById(parent_id);
+						if(obContainer) {
+							//var obResult = document.createElement("DIV");
+							//obResult.innerHTML = data;
+							//obContainer.parentNode.replaceChild(obResult.firstChild, obContainer);
+
+							obContainer.parentNode.innerHTML = data;
+						}
+					}
+					//BX('wait_' + parent_id).innerHTML = BX.message('JS_CORE_LOADING');
+					BX(parent_id).innerHTML = BX.message('JS_CORE_LOADING');
+					arParams['vote'] = 'Y';
+					arParams['vote_id'] = vote_id;
+					arParams['rating'] = vote_value;
+					BX.ajax.post(
+						'/bitrix/components/sunline/url.vote/component.php',
+						arParams,
+						__handler
+					);
+				}
+			}
+			//]]>
+		</script>
+		<table>
+			<tbody><tr>
+												<td>
+									<div id="vote_15324_0" class="star-voted" title="1"><i class="fa fa-star"></i></div>
+								</td>
+															<td>
+									<div id="vote_15324_1" class="star-voted" title="2"><i class="fa fa-star"></i></div>
+								</td>
+															<td>
+									<div id="vote_15324_2" class="star-voted" title="3"><i class="fa fa-star"></i></div>
+								</td>
+															<td>
+									<div id="vote_15324_3" class="star-voted" title="4"><i class="fa fa-star"></i></div>
+								</td>
+															<td>
+									<div id="vote_15324_4" class="star-empty" title="5"><i class="fa fa-star"></i></div>
+								</td>
+												<td class="vote-result">
+						<div id="wait_vote_15324">(1)</div>
+					</td>
+							</tr>
+		</tbody></table>
+	</div>
+
+
+</body>
+</html>
