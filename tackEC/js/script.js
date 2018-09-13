@@ -1,5 +1,5 @@
 
-const arr = [1, 2, 3, 4, 5, 5];
+const arr = [10, 2, 3, 4, 5, 1];
 const obj = {
     param: 0,
     param1: 1,
@@ -11,7 +11,7 @@ const obj = {
 };
 const obj2 = {
     param7: 0,
-    param8: 1,
+    param8: 8,
     param9: 2,
     param10: 3,
     param11: 6,
@@ -21,6 +21,117 @@ const obj2 = {
 const sameString = "string";
 const funcForMap = x => x*20;
 const funcForFilter = x => x < 5;
+const funcForSum = x => x < 10;
+const funcForFind = x => x > 8;
+
+var arr2 = [1, 2, 3, 4, 5];
+
+function mySum(sum, current) {
+    return sum + current;
+}
+
+const myReduce = (elem, func, initial) => {
+    if(elem instanceof Array){
+        let tempEl = null;
+        let i = null;
+        if(initial){
+            tempEl = initial;
+            i = 0;
+            console.log('tempEl', tempEl)
+        } else{
+            tempEl = elem[0];
+            i = 1;
+        }
+        for(; i < elem.length; i++){
+            tempEl = func(tempEl, elem[i], i, elem);
+            console.log('tempEl - ', tempEl);
+        }
+        return tempEl;
+
+    }else return undefined;
+
+}
+
+
+console.log('______________________________________________________________________________');
+
+console.log('myReduce(arr, funcForSum)', myReduce(arr2, mySum));
+
+
+
+
+var inventory = [
+    {name: 'apples', quantity: 2},
+    {name: 'bananas', quantity: 0},
+    {name: 'cherries', quantity: 5}
+];
+
+function findCherries(fruit) {
+    return fruit.name === 'cherries';
+}
+
+const myFind = (elem, func) => {
+    if(elem instanceof Array){
+        for(let i = 0; i < elem.length; i++){
+            if(func(elem[i], i, elem)) return elem[i];
+        }
+        return undefined;
+    }else if (elem instanceof Object){
+        for(let key in elem){
+            if( func(elem[key], key, elem) ) return elem[key];
+        }
+        return undefined;
+    }
+}
+console.log('______________________________________________________________________________');
+
+// console.log('myFind(arr, funcForSum)', myFind(arr, funcForFind));
+// console.log('myFind(obj, funcForSum)', myFind(obj, funcForFind));
+// console.log('myFind(obj, funcForSum)', myFind(inventory, findCherries));
+
+const MySome = (elem, func) => {
+    if(elem instanceof Array){
+        for(let i = 0; i < elem.length; i++){
+            if(func(elem[i], i, elem)) return true;
+        }
+        return false;
+    }else if (elem instanceof Object){
+        for(let key in elem){
+            if(func(elem[key], key, elem)) return true;
+            }
+        return false;
+    }else{
+        return func(elem);
+    }
+}
+
+const MyEvery = (elem, func) => {
+    if(elem instanceof Array){
+        for(let i = 0; i < elem.length; i++){
+            if(!func(elem[i], i, elem)) return false;
+        }
+        return true;
+    }else if (elem instanceof Object){
+        for(let key in elem){
+            if(!func(elem[key], key, elem)) return false;
+        }
+        return true;
+    }else{
+        return func(elem);
+    }
+}
+
+// console.log('MySome(arr, funcForSum)', MySome(arr, funcForSum));
+// console.log('MySome(obj, funcForSum)', MySome(obj, funcForSum));
+//
+// console.log('______________________________________________________________________________');
+//
+// console.log('MySome(arr, funcForSum)', MyEvery(arr, funcForSum));
+// console.log('MySome(obj, funcForSum)', MyEvery(obj, funcForSum));
+
+
+
+
 
 const Concat = function(elem){
     if(elem instanceof Array){
@@ -88,13 +199,14 @@ const Map = (elem, func) => {
 
 // console.log('Map(arr, func)', Map(obj, funcForMap));
 // console.log('Filter(arr, func)', Filter(obj, funcForFilter));
-console.log('Concat(arr, arr)', Concat(arr, arr));
-console.log('Concat(obj, obj)', Concat(obj, obj2));
+// console.log('Concat(arr, arr)', Concat(arr, arr));
+// console.log('Concat(obj, obj)', Concat(obj, obj2));
+// console.log('findOne(obj, 1)', findOne(obj2, 1));
 
 
 
-console.log('arr', arr);
-console.log('object', obj);
+// console.log('arr', arr);
+// console.log('object', obj);
 
 // let x = [
 //     {
