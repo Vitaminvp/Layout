@@ -4,7 +4,7 @@
 **Layout**
  - **[Bergen](https://vitaminvp.github.io/dif/Bergen/)**
  - **[Clinic-website-template](https://vitaminvp.github.io/dif/Clinic-website-template/)**
- - **[David Landing](https://vitaminvp.github.io/dif/David landing/)**
+ - **[David Landing](https://vitaminvp.github.io/dif/DavidLanding/)**
  - **[Gold Coach](https://vitaminvp.github.io/dif/GoldCoach/)**
  - **[Kanban Board](https://vitaminvp.github.io/dif/Kanban/)**
  - **[Le&VIt page](https://vitaminvp.github.io/dif/Le&VIt/)**
