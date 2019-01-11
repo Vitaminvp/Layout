@@ -2,27 +2,26 @@
 
 
 **Layout**
- - **[Bergen](Bergen/)**
- - **[Clinic-website-template](Clinic-website-template/)**
- - **[David Landing](David landing/)**
- - **[Gold Coach](GoldCoach/)**
- - **[Kanban Board](Kanban/)**
- - **[Le&VIt page](Le&VIt/)**
- - **[WebAcsdemy home work menu](Menu/)**
- - **[Miami page](miami/)**
- - **[Project#1 page](Project#1/)**
- - **[Project#2 page](Project#2/)**
- - **[Silver page](Silver/)**
- - **[Gift card](task2/)** 
- - **[Gift card+](task2+/)** 
- - **[Some page](task3/)** 
+ - **[Bergen](https://vitaminvp.github.io/dif/Bergen/)**
+ - **[Clinic-website-template](https://vitaminvp.github.io/dif/Clinic-website-template/)**
+ - **[David Landing](https://vitaminvp.github.io/dif/David landing/)**
+ - **[Gold Coach](https://vitaminvp.github.io/dif/GoldCoach/)**
+ - **[Kanban Board](https://vitaminvp.github.io/dif/Kanban/)**
+ - **[Le&VIt page](https://vitaminvp.github.io/dif/Le&VIt/)**
+ - **[WebAcsdemy home work menu](https://vitaminvp.github.io/dif/Menu/)**
+ - **[Miami page](https://vitaminvp.github.io/dif/miami/)**
+ - **[Project#1 page](https://vitaminvp.github.io/dif/Project#1/)**
+ - **[Project#2 page](https://vitaminvp.github.io/dif/Project#2/)**
+ - **[Silver page](https://vitaminvp.github.io/dif/Silver/)**
+ - **[Gift card](https://vitaminvp.github.io/dif/task2/)** 
+ - **[Gift card+](https://vitaminvp.github.io/dif/task2+/)** 
+ - **[Some page](https://vitaminvp.github.io/dif/task3/)** 
+ - **[Landing page](https://vitaminvp.github.io/dif/task4/)** 
  
  **Code**
- - **[Timer with pop-ups](task/)**
- - **[Console task](tackEC/)** 
- - **[Console task](tackEC/)** 
- - **[Console task](tackEC/)** 
- - **[Console task](tackEC/)** 
+ - **[Timer with pop-ups](https://vitaminvp.github.io/dif/task/)**
+ - **[Console task](https://vitaminvp.github.io/dif/tackEC/)** 
+
  
  
  
