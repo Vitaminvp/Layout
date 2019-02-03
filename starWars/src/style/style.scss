@@ -1,0 +1,14 @@
+@import './base';
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  & li{
+    margin: 5px;
+    padding: 5px;
+    &:nth-child(2n){
+      background-color: lightgrey;
+    }
+  }
+}

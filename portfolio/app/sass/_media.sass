@@ -1,0 +1,74 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+   .about
+        h3
+            margin: 20px 0
+            font-size: 20px
+        p
+            width: 100%
+            font-size: 18px
+   .contact
+        padding: 10px
+        h3
+            margin: 20px 0 40px 
+            font-size: 20px
+        ul
+            padding: 0
+            li
+                width: 100%
+                font-size: 18px
+        
+//Small: ≥576px
++media-breakpoint-down(sm)
+    #login 
+        form 
+            input 
+                height: 50px
+                font-size: 16px
+            span
+                height: 50px
+                line-height: 50px
+                width: 50px
+            textarea
+                font-size: 16px
+        
+//Extra small: >0
++media-breakpoint-down(xs)
+    .about
+        padding: 10px
+        h3
+            font-size: 16px
+        p
+            font-size: 16px
+            padding-left: 25px
+            &::before
+                font-size: 20px
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
