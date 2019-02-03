@@ -8,7 +8,7 @@ const dataFetch = url =>
             }
             throw new Error(res.statusText);
         })
-        .then(console.log);
+        .then(({ results }) => results);
 
 
 export const peopleFetch = () => dataFetch(URL);
