@@ -1,0 +1,57 @@
+.pricetable{
+    border: 1px solid #c4c4c4;
+    font-family: roboto, sans-serif;
+}
+.pricetable .pricenumber{
+    text-align: center;
+    color: #edb662;
+    font-weight: 500;
+}
+.pricetable-last .pricenumber{
+    text-align: center;
+    color: #edb662;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.pricetable tr th{
+    text-align: left;
+    font-family: roboto, sans-serif;
+    font-family: Roboto;
+    font-size: 30px;
+    line-height: 39px;
+    color: #021d57;
+    font-weight: 500;
+    padding: 20px 20px 20px 40px;
+    border-bottom: 1px solid #c4c4c4;
+}
+.pricetable tr th + th{
+    border-left: 1px solid #c4c4c4;
+}
+.pricetable tr th.pricetable__emptycell{
+    border-left: none;
+}
+.pricetable tr th.pricetable__package{
+    border-bottom: 1px solid #edb662;
+}
+.pricetable tr th span{
+    color: #c4c4c4;
+    font-weight: 400;
+}
+.pricetable tr td{
+    border-top: 1px solid #c4c4c4;
+    
+}
+.pricetable tr td{
+    color: #021d57;
+    font-weight: 400;
+    padding: 15px 15px 15px 40px;
+    
+}
+.pricetable tr td.pricetable__bordertopnone{
+    border-top: none;
+    
+}
+.pricetable tr td.pricetable__borderleft{
+    border-left: 1px solid #c4c4c4;
+    
+}
