@@ -7,12 +7,11 @@ const dataFetch = url =>
                 return res.json();
             }
             throw new Error(res.statusText);
-        })
-        .then(({ results }) => results);
+        });
 
 
 export const peopleFetch = () => dataFetch(URL)
-    .then(results => {
+    .then(({results}) => {
         console.log("results", results);
         return Promise.all(
             results.map(person =>
