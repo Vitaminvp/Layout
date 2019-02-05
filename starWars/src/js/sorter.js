@@ -1,8 +1,14 @@
-
+const state = {
+    sortMassBy: 'asc'
+};
+let people = [];
 const processPeople = ({ currentTarget }) => {
-    console.log("currentTarget.elements", currentTarget.elements.mass);
     const massSelected = Array.from(currentTarget.elements.mass).find(({ checked }) => checked);
-    console.log("massSelected", massSelected);
+    state.sortMassBy = massSelected.dataset.order;
+    console.log("state", state);
 };
 
-export default processPeople;
+export default initData => {
+    people = initData;
+    return processPeople;
+} ;
