@@ -11,4 +11,9 @@ const dataFetch = url =>
         .then(({ results }) => results);
 
 
-export const peopleFetch = () => dataFetch(URL);
+export const peopleFetch = () => dataFetch(URL)
+    .then(({results}) => {
+        return results.map(person => fetchStarship(person.starships).then(starships => ({...person, starships})));
+    });
+
+const fetchStarship = urls => Promise.all(urls.map(dataFetch));

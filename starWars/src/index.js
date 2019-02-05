@@ -7,11 +7,13 @@ const app = document.getElementById("app");
 const form = document.querySelector(".filters");
 
 const drawPeople = people => {
-    let clone = app.cloneNode(true);
+    // let clone = app.cloneNode(true);
     const peopleList = makePeoplesList(people);
-    clone.innerHTML = '';
-    clone.append(peopleList);
-    app.replaceWith(clone);
+    // clone.innerHTML = '';
+    // clone.append(peopleList);
+    // app.replaceWith(clone);
+    app.innerHTML = '';
+    app.appendChild(peopleList);
 };
 const init = () => {
     peopleFetch()
