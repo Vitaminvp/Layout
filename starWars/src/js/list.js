@@ -5,7 +5,6 @@ const convertData = stringData => {
 const makePeopleHTML = ({name, created, mass, gender, starships}) => {
     const li = document.createElement('LI');
     li.classList.add('people-list');
-    console.log("starships", starships);
     li.innerHTML = `
         <h4>Name: ${name}</h4>
         <p>Created: ${convertData(created)}</p>

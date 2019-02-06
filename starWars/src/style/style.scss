@@ -7,6 +7,10 @@ ul{
   & li{
     margin: 5px;
     padding: 5px;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+    max-width: 250px;
+    box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.7);
     &:nth-child(2n){
       background-color: lightgrey;
     }
