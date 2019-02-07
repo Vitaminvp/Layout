@@ -19,7 +19,7 @@
  - **[Landing page](https://vitaminvp.github.io/dif/task4/)** 
  
  **Code**
- - **[Star Wars API](https://vitaminvp.github.io/Layout/starWars/src/)**
+ - **[Star Wars API](https://vitaminvp.github.io/Layout/starWars/dist/)**
  - **[Timer with pop-ups](https://vitaminvp.github.io/dif/task/)**
  - **[Console task](https://vitaminvp.github.io/dif/tackEC/)** 
 
