@@ -5,14 +5,14 @@ import makeSorter from './js/sorter';
 import './style/style.scss';
 const app = document.getElementById("app");
 const form = document.querySelector(".filters");
-const textInput = document.getElementById("name-input");
 
 const drawPeople = people => {
     // let clone = app.cloneNode(true);
     const peopleList = makePeoplesList(people);
-    // clone.innerHTML = '';
-    // clone.append(peopleList);
+    //clone.innerHTML = '';
+    // clone.append(fragment);
     // app.replaceWith(clone);
+
     app.innerHTML = '';
     app.appendChild(peopleList);
 };
@@ -23,7 +23,6 @@ const init = () => {
             const handleChange = makeSorter(people, drawPeople);
             form.addEventListener('input', handleChange);
         });
-
 };
 
 init();

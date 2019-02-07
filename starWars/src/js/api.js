@@ -14,10 +14,10 @@ export const peopleFetch = () => dataFetch(URL)
     .then(({results}) => {
         return Promise.all(
             results.map(person =>
-                fetchStarship(person.starships)
+                fetchStarShip(person.starships)
                     .then(starShips => ({...person, starShips}))
             )
         );
     });
 
-const fetchStarship = urls => Promise.all(urls.map(dataFetch));
+const fetchStarShip = urls => Promise.all(urls.map(dataFetch));
