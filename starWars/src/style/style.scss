@@ -11,6 +11,9 @@ ul{
     border-radius: 5px;
     max-width: 250px;
     box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.7);
+    &:hover{
+      box-shadow: 10px 15px 5px -8px rgba(0,0,0,0.7);
+    }
     &:nth-child(2n){
       background-color: lightgrey;
     }
