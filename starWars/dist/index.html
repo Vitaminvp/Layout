@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+<h2>Star Wars</h2>
+    <form class="filters">
+        <fieldset>
+            <input name="mass" type="radio" id="mass-asc" data-value="asc" checked>
+            <label for="mass-asc">Mass ascending</label>
+            <input name="mass" type="radio" id="mass-des" data-value="des" >
+            <label for="mass-des">Mass descending</label>
+        </fieldset>
+        <fieldset>
+            <input name="gender" type="radio" id="gender-all" data-value="all" checked>
+            <label for="gender-all">All</label>
+            <input name="gender" type="radio" id="gender-male" data-value="male">
+            <label for="gender-male">Male</label>
+            <input name="gender" type="radio" id="gender-female" data-value="female">
+            <label for="gender-female">Female</label>
+            <input name="gender" type="radio" id="gender-droid" data-value="n/a">
+            <label for="gender-droid">Droid</label>
+        </fieldset>
+        <fieldset>
+            <input name="name" type="text" id="name-input" data-name="name">
+            <label for="name-input">Search</label>
+        </fieldset>
+    </form>
+    <div id="app"></div>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
