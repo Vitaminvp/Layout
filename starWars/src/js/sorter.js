@@ -31,14 +31,21 @@ const filterPeopleByName = people => {
 //     return checked.dataset[key];
 // };
 
-const processPeople = ({ currentTarget, target }) => {
-    if(target.checked) state[target.name] = target.dataset.value;
+const processPeople = ({ target }) => {
+
+    state[target.name] = (target.checked) ? target.dataset.value : target.value;
+
+
+    //const form = target.closest('.filters');
     // const massSelected = getDataSetValue(currentTarget.elements.mass, 'order');
     // const genderFilter = getDataSetValue(currentTarget.elements.gender, 'gender');
     // state.mass = massSelected;
     // state.gender = genderFilter;
-    const inputString = currentTarget.elements.name.value;
-    if(inputString) state.name = currentTarget.elements.name.value;
+
+    //const inputString = currentTarget.elements.name.value;
+    //const inputString = target.value;
+    //if(inputString) state.name = inputString;
+    //state.name = inputString;
 
     const sorted = sortPeople(people);
     const filtered = filterPeople(sorted);
