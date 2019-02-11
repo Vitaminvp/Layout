@@ -11,4 +11,11 @@
     line-height: 20px;
     min-height: 20px;
   }
+  & input{
+    width: 100%;
+    border-radius: 3px;
+    line-height: 30px;
+    border: 1px solid lightgrey;
+    text-align: center;
+  }
 }
