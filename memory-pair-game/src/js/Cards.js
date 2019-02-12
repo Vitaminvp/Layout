@@ -60,7 +60,7 @@ class Cards {
         for (let i = 0; i < APP_CONFIG.height; i++) {
             const div = document.createElement('div');
             for(let j = 0; j < APP_CONFIG.width; j++ ){
-                const card = new Card(div, (...args) => this.countInc(...args), totalBlocksAmount[num++]);
+                new Card(div, (...args) => this.countInc(...args), totalBlocksAmount[num++]);
             }
             docFragment.appendChild(div);
         }

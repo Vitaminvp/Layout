@@ -6,4 +6,6 @@ import Cards from './js/Cards';
 
 
 const app = document.querySelector("#app");
-const cards = new Cards(app);
+const init = () => new Cards(app);
+
+init();
