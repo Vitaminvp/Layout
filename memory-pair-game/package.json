@@ -37,7 +37,9 @@
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
   },
-  "pluging": ["prettier"],
+  "pluging": [
+    "prettier"
+  ],
   "eslintConfig": {
     "parserOptions": {
       "ecmaVersion": 6
@@ -45,7 +47,12 @@
     "rules": {
       "semi": "error",
       "no-console": "off",
-      "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+      "no-plusplus": [
+        "error",
+        {
+          "allowForLoopAfterthoughts": true
+        }
+      ],
       "no-unused-vars": [
         "error",
         {

@@ -6,7 +6,6 @@ class Cards {
     constructor(target) {
         this.target = target;
         this.render();
-        // this.count = 0;
         this.total = 0;
         this.firstPicSrc = '';
         this.firstId = '';
@@ -48,7 +47,7 @@ class Cards {
             this.output.appendChild(this.loader);
             this.loader.innerHTML = '<img src="https://vitaminvp.github.io/WebAcademy-HomeWork/client/assets/images/ajax-loader.gif" alt="card">';
             this.target.appendChild(this.output);
-            this.renderItems();
+            setTimeout(()=>this.renderItems(), 500);
         });
     }
 
@@ -56,11 +55,12 @@ class Cards {
         this.output.innerHTML = "";
         const docFragment = document.createDocumentFragment();
         const arrOfImg = APP_CONFIG.arrImgSrc.slice(0, APP_CONFIG.width);
-        const totalBlocksAmount = shuffle(arrOfImg.reduce((acc, cur, i, arr) => [...acc, ...arr], []));
+        const totalBlocksAmount = arrOfImg.slice(0, APP_CONFIG.width).reduce((acc, cur, i, arr) => [...shuffle(acc), ...arr], []);
+        let num = 0;
         for (let i = 0; i < APP_CONFIG.height; i++) {
             const div = document.createElement('div');
             for(let j = 0; j < APP_CONFIG.width; j++ ){
-                const card = new Card(div, (...args) => this.countInc(...args), totalBlocksAmount[i+j]);
+                const card = new Card(div, (...args) => this.countInc(...args), totalBlocksAmount[num++]);
             }
             docFragment.appendChild(div);
         }
